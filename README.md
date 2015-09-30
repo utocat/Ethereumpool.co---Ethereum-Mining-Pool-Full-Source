@@ -65,7 +65,7 @@ Setting up pool revenue address and fee<br>
 <pre>block_processing/index.php</pre> and make sure address exists as 'miner' in miners table.
 
 <br><br>
-You can easily access all background script by
+You can easily access all background scripts by
 <pre>
 screen -ls<br>then pick one by<br>screen -x INTEGER</pre>
 
