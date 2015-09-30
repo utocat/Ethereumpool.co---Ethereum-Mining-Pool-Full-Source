@@ -64,6 +64,11 @@ Also please review python path in php files, but '/usr/bin/python' should be fin
 Setting up pool revenue address and fee<br>
 <pre>block_processing/index.php</pre> and make sure address exists as 'miner' in miners table.
 
+<br><br>
+You can easily access all background script by
+<pre>
+screen -ls<br>then pick one by<br>screen -x INTEGER</pre>
+
 #Contributing
 If you want to contribute, fork and pull request or open issue.
 
