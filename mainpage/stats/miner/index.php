@@ -576,9 +576,6 @@ while ($row=mysqli_fetch_row($existResult)){
     <script type="text/javascript">
 $(function () {
     $.getJSON("http://ethereumpool.co/api/get/data/index.php?data=miner_hashrate&range=max&dtx='.$miner.'", function (data) {
-
-
-
         $("#container").highcharts("StockChart", {
             rangeSelector: {
             buttons: [{
@@ -652,10 +649,10 @@ $(function () {
             }]
         });
     });
-
+  setTimeout(balance, 1000);
 });
 
-$(function () {
+function balance() {
     $.getJSON("http://ethereumpool.co/api/get/data/index.php?data=_miner_balance&range=max&rr=1&dtx='.$miner.'", function (data) {
 
 
@@ -733,8 +730,7 @@ $(function () {
             }]
         });
     });
-
-});
+};
 
 function zip(a, b) {
     return a.map(function(x, i) {
