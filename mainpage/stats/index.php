@@ -1,6 +1,22 @@
 <?php
 error_reporting(error_reporting() & ~E_NOTICE);
 include('/var/www4/BigInteger.php');
+
+$m = new Memcached();
+$m->addServer('localhost', 11211);
+
+if (isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
+  $_SERVER['REMOTE_ADDR'] = $_SERVER["HTTP_CF_CONNECTING_IP"];
+}
+
+$real_visitor_ip = $_SERVER["REMOTE_ADDR"];
+$real_visitor_ip_mem = $m->get($real_visitor_ip);
+if (!$real_visitor_ip_mem) {
+    $m->set($real_visitor_ip,'true',1);
+} else{
+   die('too many request from your ip to this endpoint');
+}
+
 $ether_wei = 1000000000000000000;
 $cacheTime = 5;
 $avg_stats = 4;
