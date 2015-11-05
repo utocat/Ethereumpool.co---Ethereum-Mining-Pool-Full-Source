@@ -6,6 +6,17 @@ $miner = $_GET['dtx'];
 $worker = $_GET['wrk'];
 $lol = $_GET['rr'];
 
+$m = new Memcached();
+$m->addServer('localhost', 11211);
+
+$real_visitor_ip = $_SERVER["REMOTE_ADDR"];
+$real_visitor_ip_mem = $m->get($real_visitor_ip);
+if (!$real_visitor_ip_mem) {
+    $m->set($real_visitor_ip,'true',1);
+} else{
+   die('too many request from your ip to this endpoint');
+}
+
 function mysql_fix_escape_string($text){
     if(is_array($text)) 
         return array_map(__METHOD__, $text); 
