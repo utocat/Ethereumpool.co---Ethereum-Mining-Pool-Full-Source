@@ -157,9 +157,6 @@ echo '<!DOCTYPE html>
     <script type="text/javascript">
 $(function () {
     $.getJSON("http://ethereumpool.co/api/get/data/index.php?data=hashrate&range=max", function (data) {
-
-
-
         $("#container").highcharts("StockChart", {
             rangeSelector: {
             buttons: [{
@@ -236,16 +233,13 @@ $(function () {
                 }
             }]
         });
+        setTimeout(balance, 1000);
     });
-
 });
 
 
-$(function () {
+function balance() {
     $.getJSON("http://ethereumpool.co/api/get/data/index.php?data=pool_balance&range=max", function (data) {
-
-
-
         $("#container_balance").highcharts("StockChart", {
             rangeSelector: {
             buttons: [{
@@ -322,15 +316,13 @@ $(function () {
                 }
             }]
         });
+        setTimeout(miners, 1000);
     });
 
-});
+};
 
-$(function () {
+function miners() {
     $.getJSON("http://ethereumpool.co/api/get/data/index.php?data=pool_miners&range=max", function (data) {
-
-
-
         $("#container_miners").highcharts("StockChart", {
             rangeSelector: {
             buttons: [{
@@ -407,11 +399,12 @@ $(function () {
                 }
             }]
         });
+        setTimeout(workers, 1000);
     });
 
-});
+};
 
-$(function () {
+function workers() {
     $.getJSON("http://ethereumpool.co/api/get/data/index.php?data=pool_workers&range=max", function (data) {
 
 
@@ -494,7 +487,7 @@ $(function () {
         });
     });
 
-});
+};
 
 function zip(a, b) {
     return a.map(function(x, i) {
@@ -507,5 +500,4 @@ function zip(a, b) {
 
 </body>
 </html> 
-
 
