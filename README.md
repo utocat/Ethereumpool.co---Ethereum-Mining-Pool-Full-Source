@@ -23,7 +23,7 @@ Setup nginx server blocks:
 <pre>'mainpage' directory as public and if you need block /logs directory
 'block_processing' locally
 </pre>
-Also remeber to setup phpmyadmin with ssl, etc..<br>
+Also remember to setup phpmyadmin with ssl, etc..<br>
 Now move files <pre>nonce_fast.py and nonce.py</pre> from 'misc' directory to <pre>/root/pyethereum/ethereum/ (main directory of Pyethereum)</pre><br>
 To maximize performance tweak configurations of memcached,mariadb,nginx,hhvm and kernel but it's not necessary to start pool.<br>
 
