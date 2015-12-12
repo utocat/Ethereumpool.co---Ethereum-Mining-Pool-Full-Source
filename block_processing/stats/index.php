@@ -1,7 +1,9 @@
 <?php
 error_reporting(error_reporting() & ~E_NOTICE);
 include('/var/www4/BigInteger.php');
-$mysqli=mysqli_connect('Mysql_server_ip','Database_username','Database_password','Database_name') or die("Database Error");
+$configs = include('../../config.php');
+
+$mysqli=mysqli_connect($config['host'], $config['username'], $config['password'], $config['bdd']) or die("Database Error");
 $xx = 0;
 echo "\nStart";
 while (1) {
