@@ -141,7 +141,7 @@ foreach ($miner_payouts as $key => $value) {
   $key = str_replace("'", '', $key);
   $value = $value;
   $mhash_rl_temp = number_format((float)$value/1000000, 2, '.', '');
-  $activeminers = $activeminers.'<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://ethereumpool.co/stats/miner/?address='.$key.'">'.$key.'</a> running at:'.$mhash_rl_temp.' MHash';
+  $activeminers = $activeminers.'<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/stats/miner/?address='.$key.'">'.$key.'</a> running at:'.$mhash_rl_temp.' MHash';
   $minerCount++;
 }
 
