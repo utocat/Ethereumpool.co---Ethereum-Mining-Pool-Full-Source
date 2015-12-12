@@ -327,13 +327,13 @@ echo '<!DOCTYPE html>
                     </div><!--//navbar-header-->
                     <div id="navbar-collapse" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li class="nav-item"><a href="http://ethereumpool.co/">Home</a></li>
-                            <li class="nav-item"><a href="http://ethereumpool.co/stats">Stats</a></li>
-                            <li class="nav-item"><a href="http://ethereumpool.co/charts">Charts</a></li>
-                            <li class="active nav-item"><a href="http://ethereumpool.co/stats/miner/">Miner Stats</a></li>              
-                            <li class="nav-item last"><a href="http://ethereumpool.co/how">How to Mine?</a></li>
-                            <li class="nav-item"><a href="http://ethereumpool.co/forums">Forum threads</a></li>
-                            <li class="nav-item last"><a href="mailto:ethereumpool@yandex.com">Support</a></li>
+                            <li class="nav-item"><a href="/">Home</a></li>
+                            <li class="nav-item"><a href="/stats">Stats</a></li>
+                            <li class="nav-item"><a href="/charts">Charts</a></li>
+                            <li class="active nav-item"><a href="/miner/">Miner Stats</a></li>              
+                            <li class="nav-item last"><a href="/how">How to Mine?</a></li>
+                            <li class="nav-item"><a href="/forums">Forum threads</a></li>
+                            <li class="nav-item last"><a href="mailto:laurent@utocat.com">Support</a></li>
                         </ul><!--//nav-->
                     </div><!--//navabr-collapse-->
                 </nav><!--//main-nav-->
