@@ -41,7 +41,7 @@
         <header id="header" class="header navbar-fixed-top">  
             <div class="container">       
                 <h1 class="logo">
-                    <a href="../"><span class="highlight">EthPool</span>utocat.com</a>
+                    <a href="../"><span class="highlight">EthPool</span>.utocat.com</a>
                 </h1><!--//logo-->
                 <nav class="main-nav navbar-right" role="navigation">
                     <div class="navbar-header">
