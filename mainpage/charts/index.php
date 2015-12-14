@@ -154,7 +154,7 @@ echo '<!DOCTYPE html>
     '; ?>
     <script type="text/javascript">
 $(function () {
-    $.getJSON("http://ethereumpool.co/api/get/data/index.php?data=hashrate&range=max", function (data) {
+    $.getJSON("/api/get/data/index.php?data=hashrate&range=max", function (data) {
         $("#container").highcharts("StockChart", {
             rangeSelector: {
             buttons: [{
@@ -237,7 +237,7 @@ $(function () {
 
 
 function balance() {
-    $.getJSON("http://ethereumpool.co/api/get/data/index.php?data=pool_balance&range=max", function (data) {
+    $.getJSON("/api/get/data/index.php?data=pool_balance&range=max", function (data) {
         $("#container_balance").highcharts("StockChart", {
             rangeSelector: {
             buttons: [{
@@ -320,7 +320,7 @@ function balance() {
 };
 
 function miners() {
-    $.getJSON("http://ethereumpool.co/api/get/data/index.php?data=pool_miners&range=max", function (data) {
+    $.getJSON("/api/get/data/index.php?data=pool_miners&range=max", function (data) {
         $("#container_miners").highcharts("StockChart", {
             rangeSelector: {
             buttons: [{
@@ -403,7 +403,7 @@ function miners() {
 };
 
 function workers() {
-    $.getJSON("http://ethereumpool.co/api/get/data/index.php?data=pool_workers&range=max", function (data) {
+    $.getJSON("/api/get/data/index.php?data=pool_workers&range=max", function (data) {
 
 
 

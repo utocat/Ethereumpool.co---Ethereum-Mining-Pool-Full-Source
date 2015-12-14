@@ -410,7 +410,7 @@ echo '</center><br><div id="container"><center>Loading chart...</center></div>';
     </script>
     <script type="text/javascript">
 $(function () {
-    $.getJSON("http://ethereumpool.co/api/get/data/index.php?data=worker_hashrate&range=max&dtx='.$miner.'&wrk='.$worker.'", function (data) {'; ?>
+    $.getJSON("/api/get/data/index.php?data=worker_hashrate&range=max&dtx='.$miner.'&wrk='.$worker.'", function (data) {'; ?>
 
 
 

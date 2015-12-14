@@ -140,8 +140,7 @@ if (strpos($minerdata,'@') === false) {
                                 <li><a href="../stats">Pool statistics</a></li>
                                 <li><a href="../charts">Charts</a></li>
                                 <li><a href="../stats/miner/">Miner statistics</a></li>
-                                <li><a href="../how">How to start mine?</a></li>  
-                                <li><a href="../forums">Forum threads</a></li>                              
+                                <li><a href="../how">How to start mine?</a></li>                           
                                 <li><a href="mailto:laurent@utocat.com">Support</a></li>
                             </ul>
                         </div><!--//footer-col-inner-->
