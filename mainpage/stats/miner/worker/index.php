@@ -52,16 +52,16 @@ if (!$miner || !$worker) {
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-    <title>Worker Statistics - Ethereumpool.co</title>
+    <title>Worker Statistics - EthPool.utocat.com</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ethereum Pool.Co is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)">
-    <meta name="author" content="Ethereumpool.co">
+    <meta name="description" content="EthPool.utocat.com is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)">
+    <meta name="author" content="EthPool.utocat.com">
     <meta property="og:type"               content="website" />
-    <meta property="og:title"              content="Ethereumpool.co - Ethereum Mining Pool"/>
-    <meta property="og:description"        content="Ethereum Pool.Co is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)"/>
+    <meta property="og:title"              content="EthPool.utocat.com - Ethereum Mining Pool"/>
+    <meta property="og:description"        content="EthPool.utocat.com is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)"/>
     <link rel="shortcut icon" href="../favicon.ico">  
     <meta name="keywords" content="eth,gpu,mining,mine,ethereum,calculator,profitability,profit,how,to,ether,ethers">
     <link href="http://fonts.googleapis.com/css?family=Merriweather+Sans:700,300italic,400italic,700italic,300,400" rel="stylesheet" type="text/css">
@@ -99,13 +99,12 @@ if (!$miner || !$worker) {
                     </div><!--//navbar-header-->
                     <div id="navbar-collapse" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li class="nav-item"><a href="http://ethereumpool.co/">Home</a></li>
-                            <li class="nav-item"><a href="http://ethereumpool.co/stats">Stats</a></li>
-                            <li class="nav-item"><a href="http://ethereumpool.co/charts">Charts</a></li>
-                            <li class="active av-item"><a href="http://ethereumpool.co/stats/miner/">Miner Stats</a></li>              
-                            <li class="nav-item last"><a href="http://ethereumpool.co/how">How to Mine?</a></li>
-                            <li class="nav-item"><a href="http://ethereumpool.co/forums">Forum threads</a></li>
-                            <li class="nav-item last"><a href="mailto:ethereumpool@yandex.com">Support</a></li>
+                            <li class="nav-item"><a href="/">Home</a></li>
+                            <li class="nav-item"><a href="/stats">Stats</a></li>
+                            <li class="nav-item"><a href="/charts">Charts</a></li>
+                            <li class="active av-item"><a href="/stats/miner/">Miner Stats</a></li>              
+                            <li class="nav-item last"><a href="/how">How to Mine?</a></li>
+                            <li class="nav-item last"><a href="mailto:laurent@utocat.com">Support</a></li>
                         </ul><!--//nav-->
                     </div><!--//navabr-collapse-->
                 </nav><!--//main-nav-->
@@ -145,13 +144,12 @@ if (!$miner || !$worker) {
                         <div class="footer-col-inner">
                             <h3 class="sub-title">Quick Links</h3>
                             <ul class="list-unstyled">
-                                <li><a href="http://ethereumpool.co/">Home</a></li>
-                                <li><a href="http://ethereumpool.co/stats">Pool statistics</a></li>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/stats">Pool statistics</a></li>
                                 <li><a href="../charts">Charts</a></li>
-                                <li><a href="http://ethereumpool.co/stats/miner/">Miner statistics</a></li>
-                                <li><a href="http://ethereumpool.co/how">How to start mine?</a></li>  
-                                <li><a href="http://ethereumpool.co/forums">Forum threads</a></li>                              
-                                <li><a href="mailto:ethereumpool@yandex.com">Support</a></li>
+                                <li><a href="/stats/miner/">Miner statistics</a></li>
+                                <li><a href="/how">How to start mine?</a></li>                             
+                                <li><a href="mailto:laurent@utocat.com">Support</a></li>
                             </ul>
                         </div><!--//footer-col-inner-->
                     </div><!--//foooter-col-->
@@ -195,16 +193,16 @@ echo '<!DOCTYPE html>
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-    <title>Statistics - Ethereumpool.co</title>
+    <title>Statistics - EthPool.utocat.com</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ethereum Pool.Co is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)">
-    <meta name="author" content="Ethereumpool.co">
+    <meta name="description" content="EthPool.utocat.com is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)">
+    <meta name="author" content="EthPool.utocat.com">
     <meta property="og:type"               content="website" />
-    <meta property="og:title"              content="Ethereumpool.co - Ethereum Mining Pool"/>
-    <meta property="og:description"        content="Ethereum Pool.Co is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)"/>
+    <meta property="og:title"              content="EthPool.utocat.com - Ethereum Mining Pool"/>
+    <meta property="og:description"        content="EthPool.utocat.com is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)"/>
     <link rel="shortcut icon" href="../favicon.ico">  
     <meta name="keywords" content="eth,gpu,mining,mine,ethereum,calculator,profitability,profit,how,to,ether,ethers">
     <link href="http://fonts.googleapis.com/css?family=Merriweather+Sans:700,300italic,400italic,700italic,300,400" rel="stylesheet" type="text/css">
@@ -303,13 +301,12 @@ echo '<!DOCTYPE html>
                     </div><!--//navbar-header-->
                     <div id="navbar-collapse" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li class="nav-item"><a href="http://ethereumpool.co/">Home</a></li>
-                            <li class="nav-item"><a href="http://ethereumpool.co/stats">Stats</a></li>
-                            <li class="nav-item"><a href="http://ethereumpool.co/charts">Charts</a></li>
-                            <li class="active nav-item"><a href="http://ethereumpool.co/stats/miner/">Miner Stats</a></li>              
-                            <li class="nav-item last"><a href="http://ethereumpool.co/how">How to Mine?</a></li>
-                            <li class="nav-item"><a href="http://ethereumpool.co/forums">Forum threads</a></li>
-                            <li class="nav-item last"><a href="mailto:ethereumpool@yandex.com">Support</a></li>
+                            <li class="nav-item"><a href="/">Home</a></li>
+                            <li class="nav-item"><a href="/stats">Stats</a></li>
+                            <li class="nav-item"><a href="/charts">Charts</a></li>
+                            <li class="active nav-item"><a href="/stats/miner/">Miner Stats</a></li>              
+                            <li class="nav-item last"><a href="/how">How to Mine?</a></li>
+                            <li class="nav-item last"><a href="mailto:laurent@utocat.com">Support</a></li>
                         </ul><!--//nav-->
                     </div><!--//navabr-collapse-->
                 </nav><!--//main-nav-->
@@ -329,7 +326,7 @@ echo '<!DOCTYPE html>
                         <div class="row">
                        ';                                                                                
 
-echo '<center><a href="http://ethereumpool.co/stats/miner/?address='.$miner.'"><div class="button-fill grey" style="width:94%"><div class="button-text">'.$miner.'</b></div><div class="button-inside"><div class="inside-text">'.$miner.'</div></div></div></a>';
+echo '<center><a href="/stats/miner/?address='.$miner.'"><div class="button-fill grey" style="width:94%"><div class="button-text">'.$miner.'</b></div><div class="button-inside"><div class="inside-text">'.$miner.'</div></div></div></a>';
 echo '</center><br><div id="container"><center>Loading chart...</center></div>';
 
 
@@ -353,13 +350,12 @@ echo '</center><br><div id="container"><center>Loading chart...</center></div>';
                         <div class="footer-col-inner">
                             <h3 class="sub-title">Quick Links</h3>
                             <ul class="list-unstyled">
-                                <li><a href="http://ethereumpool.co/">Home</a></li>
-                                <li><a href="http://ethereumpool.co/stats">Pool statistics</a></li>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/stats">Pool statistics</a></li>
                                 <li><a href="../charts">Charts</a></li>
-                                <li><a href="http://ethereumpool.co/stats/miner/">Miner statistics</a></li>
-                                <li><a href="http://ethereumpool.co/how">How to start mine?</a></li>  
-                                <li><a href="http://ethereumpool.co/forums">Forum threads</a></li>                              
-                                <li><a href="mailto:ethereumpool@yandex.com">Support</a></li>
+                                <li><a href="/stats/miner/">Miner statistics</a></li>
+                                <li><a href="/how">How to start mine?</a></li>                           
+                                <li><a href="mailto:laurent@utocat.com">Support</a></li>
                             </ul>
                         </div><!--//footer-col-inner-->
                     </div><!--//foooter-col-->
