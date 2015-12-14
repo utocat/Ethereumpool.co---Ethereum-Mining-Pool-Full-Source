@@ -2,7 +2,7 @@
 error_reporting(error_reporting() & ~E_NOTICE);
 $m = new Memcached();
 include('/var/www4/BigInteger.php');
-$configs = include('../../../config.php');
+$config = include('../../../config.php');
 $m->addServer('localhost', 11211);
 $ether_wei = 1000000000000000000;
 

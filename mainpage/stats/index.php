@@ -1,7 +1,7 @@
 <?php
 error_reporting(error_reporting() & ~E_NOTICE);
 include('/var/www4/BigInteger.php');
-$configs = include('../../config.php');
+$config = include('../../config.php');
 $m = new Memcached();
 $m->addServer('localhost', 11211);
 
