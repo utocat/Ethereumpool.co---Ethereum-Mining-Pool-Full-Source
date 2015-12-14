@@ -1,7 +1,7 @@
 <?php
 error_reporting(error_reporting() & ~E_NOTICE);
 include('/var/www4/BigInteger.php');
-
+$configs = include('../../config.php');
 $m = new Memcached();
 $m->addServer('localhost', 11211);
 
@@ -21,7 +21,7 @@ $ether_wei = 1000000000000000000;
 $cacheTime = 5;
 $avg_stats = 4;
 
-  $mysqli=mysqli_connect('Mysql_server_ip','Database_username','Database_password','Database_name') or die("Database Error");
+  $mysqli=mysqli_connect($config['host'], $config['username'], $config['password'], $config['bdd']) or die("Database Error");
   $task = "SELECT count(1) FROM blocks";
   $response = mysqli_query($mysqli,$task)or die("Database Error");
   $row = mysqli_fetch_row($response);

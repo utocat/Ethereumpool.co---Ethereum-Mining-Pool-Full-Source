@@ -3,6 +3,7 @@ error_reporting(error_reporting() & ~E_NOTICE);
 include('/var/www4/BigInteger.php');
 $jsonquery = file_get_contents('php://input');
 $json = json_decode($jsonquery, true);
+$configs = include('../config.php');
 $minerdata = $_GET["miner"];
 $host = $_SERVER["REMOTE_ADDR"];
 
@@ -305,7 +306,7 @@ if ($method == 'eth_awaitNewWork' || $method == 'eth_progress') {
                     $miner_total["'$miner_id'"] = $new_val;
                  }
              } 
-             $mysqli=mysqli_connect('Mysql_server_ip','Database_username','Database_password','Database_name') or die("Database Error");
+             $mysqli=mysqli_connect($config['host'], $config['username'], $config['password'], $config['bdd']) or die("Database Error");
              $lastItem = $countFetchedArray-1;
              $last_timestamp = $currentMemArr[$lastItem][3];
              foreach ($miner_total as $key => $value) { 
@@ -362,7 +363,7 @@ if ($method == 'eth_awaitNewWork' || $method == 'eth_progress') {
 
 	//Submit New User or update randomly ip and hashrate
 	if($payout_addr != ''){
-		$mysqli=mysqli_connect('Mysql_server_ip','Database_username','Database_password','Database_name') or die("Database Error");
+		$mysqli=mysqli_connect($config['host'], $config['username'], $config['password'], $config['bdd']) or die("Database Error");
 		$existQuery = "SELECT address,hashrate FROM miners WHERE address='$payout_addr'";
 		$existResult = mysqli_query($mysqli,$existQuery)or die("Database Error");
 		$existRow = mysqli_fetch_array($existResult);
