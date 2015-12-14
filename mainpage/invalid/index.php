@@ -59,8 +59,7 @@
                             <li class="nav-item"><a href="../charts">Charts</a></li>
                             <li class="nav-item"><a href="../stats/miner/">Miner Stats</a></li>               
                             <li class="nav-item last"><a href="../how">How to Mine?</a></li>
-                            <li class="nav-item"><a href="../forums">Forum threads</a></li>
-                            <li class="nav-item last"><a href="mailto:ethereumpool@yandex.com">Support</a></li>
+                            <li class="nav-item last"><a href="mailto:laurent@utocat.com">Support</a></li>
                         </ul><!--//nav-->
                     </div><!--//navabr-collapse-->
                 </nav><!--//main-nav-->
