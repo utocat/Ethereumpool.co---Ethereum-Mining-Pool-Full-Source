@@ -24,16 +24,16 @@ if (strpos($minerdata,'@') === false) {
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-    <title>EthPool.utocat.com - Ethereum Mining Pool</title>
+    <title>Ethereum Mining Pool</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="EthPool.utocat.com is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)">
+    <meta name="description" content="ethereumpool is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)">
     <meta name="author" content="Ethereumpool.co">
     <meta property="og:type"               content="website" />
-    <meta property="og:title"              content="EthPool.utocat.com - Ethereum Mining Pool"/>
-    <meta property="og:description"        content="EthPool.utocat.com is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)"/>
+    <meta property="og:title"              content="Ethereum Mining Pool"/>
+    <meta property="og:description"        content="Stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)"/>
     <link rel="shortcut icon" href="../favicon.ico">  
     <meta name="keywords" content="eth,gpu,mining,mine,ethereum,calculator,profitability,profit,how,to,ether,ethers">
     <link href="http://fonts.googleapis.com/css?family=Merriweather+Sans:700,300italic,400italic,700italic,300,400" rel="stylesheet" type="text/css">
@@ -58,7 +58,7 @@ if (strpos($minerdata,'@') === false) {
         <header id="header" class="header navbar-fixed-top">  
             <div class="container">       
                 <h1 class="logo">
-                    <a href="../"><span class="highlight">EthPool</span>.utocat.com</a>
+                    <a href="../"><span class="highlight">Ethereum</span>Pool</a>
                 </h1><!--//logo-->
                 <nav class="main-nav navbar-right" role="navigation">
                     <div class="navbar-header">
@@ -76,7 +76,7 @@ if (strpos($minerdata,'@') === false) {
                             <li class="nav-item"><a href="../charts">Charts</a></li>
                             <li class="nav-item"><a href="../stats/miner/">Miner Stats</a></li>               
                             <li class="nav-item last"><a href="../how">How to Mine?</a></li>
-                            <li class="nav-item last"><a href="mailto:laurent@utocat.com">Support</a></li>
+                            <li class="nav-item last"><a href="mailto:mail@mail.com">Support</a></li>
                         </ul><!--//nav-->
                     </div><!--//navabr-collapse-->
                 </nav><!--//main-nav-->
@@ -87,17 +87,17 @@ if (strpos($minerdata,'@') === false) {
     <!-- ******Contact Section****** --> 
     <section class="contact-section section">
         <div class="container">
-            <h2 class="title text-center"><br>EthPool.utocat.com - The most reliable mining pool yet!</h2>
+            <h2 class="title text-center"><br>The most reliable mining pool yet!</h2>
             <p class="intro text-left"></p>
              <p class="intro text-left"><font color="F22613"></p></font>
             <form id="contact-form" class="contact-form form" method="post" action="push.php">                    
                 <div class="row text-left">
                     <div class="contact-form-inner col-md-8 col-sm-12 col-xs-12 col-md-offset-2 col-sm-offset-0 xs-offset-0">
                         <div class="row">                                                                                       
-							EthPool.utocat.com - is all about transparency and fair mining! Pool fee is 0.8% and network fee on withdraw<br>
+							Ethereum Pool is all about transparency and fair mining! Pool fee is 0.8% and network fee on withdraw<br>
 							Withdraw is twice a day if your balance exceed 0.5 ether.<br>
 							<br>
-							<!--center><a class="twitter-timeline" width="500" height="300" href="https://twitter.com/utocat" data-widget-id="638177314422046722">Tweets by @utocat</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?"http":"https";if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+							<!--center><a class="twitter-timeline" width="500" height="300" href="https://twitter.com/twitter" data-widget-id="638177314422046722">Tweets by @ethereumpool</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?"http":"https";if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                             </center--><br><br><b>In How to mine section you will find answers for questions:</b><br>
 							How connect to pool?<br>
                             How to set up ethereum client (wallet)?<br>
@@ -141,7 +141,7 @@ if (strpos($minerdata,'@') === false) {
                                 <li><a href="../charts">Charts</a></li>
                                 <li><a href="../stats/miner/">Miner statistics</a></li>
                                 <li><a href="../how">How to start mine?</a></li>                           
-                                <li><a href="mailto:laurent@utocat.com">Support</a></li>
+                                <li><a href="mailto:mail@mail.com">Support</a></li>
                             </ul>
                         </div><!--//footer-col-inner-->
                     </div><!--//foooter-col-->
@@ -258,7 +258,7 @@ $current .= "\n\n\n\n---------------------------New Query\nMethod:".$method.' Fr
 $current .= "\nUser Hashrate S:".$hash_rate.'mhash';
 $current .= "\nUser payout S:".$payout_addr.'';
 
-
+m
 
 if ($method == 'eth_awaitNewWork' || $method == 'eth_progress') {
 	//Redirect other methods to RPC                                                    
