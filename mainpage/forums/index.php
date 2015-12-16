@@ -3,15 +3,15 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-    <title>Forum Threads - ethereumpool.co ethereum mining pool</title>
+    <title>Forum Threads</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ethereum Pool.Co is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)">
+    <meta name="description" content="Ethereumpool is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)">
     <meta name="author" content="Ethereumpool.co">
     <meta property="og:type"               content="website" />
-    <meta property="og:title"              content="Ethereumpool.co - Ethereum Mining Pool"/>
+    <meta property="og:title"              content="Ethereum Mining Pool"/>
     <meta property="og:description"        content="Ethereum Pool.Co is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)"/>
     <link rel="shortcut icon" href="../favicon.ico">  
     <meta name="keywords" content="eth,gpu,mining,mine,ethereum,calculator,profitability,profit,how,to,ether,ethers">
@@ -60,7 +60,7 @@
                             <li class="nav-item"><a href="../stats/miner/">Miner Stats</a></li>               
                             <li class="nav-item last"><a href="../how">How to Mine?</a></li>
                             <li class="active nav-item"><a href="../forums">Forum threads</a></li>
-                            <li class="nav-item last"><a href="mailto:ethereumpool@yandex.com">Support</a></li>
+                            <li class="nav-item last"><a href="mailto:mail@mail.com">Support</a></li>
                         </ul><!--//nav-->
                     </div><!--//navabr-collapse-->
                 </nav><!--//main-nav-->
@@ -78,21 +78,8 @@
                 <div class="row text-left">
                     <div class="contact-form-inner col-md-8 col-sm-12 col-xs-12 col-md-offset-2 col-sm-offset-0 xs-offset-0">
                         <div class="row">                                                                                       
-                               <a href="https://bitcointalk.org/index.php?topic=1156674" target="_blank">https://bitcointalk.org/index.php?topic=1156674</a>
-                               <br><br> <a href="https://forum.ethereum.org/discussion/3123/ethereumpool-co-reliable-mining-pool" target="_blank">https://forum.ethereum.org/discussion/3123/ethereumpool-co-reliable-mining-pool</a>
-                               <br><br> <a href="https://forum.bitcoin.pl/post231669.html" target="_blank">https://forum.bitcoin.pl/post231669.html</a>
-                               <br><br> <a href="https://litecointalk.org/index.php?topic=27368.0" target="_blank">https://litecointalk.org/index.php?topic=27368.0</a>
-                               <br> <br><a href="https://www.reddit.com/r/ethereum/comments/3hlfap/ethereumpoolco_reliable_mining_pool/" target="_blank">https://www.reddit.com/r/ethereum/comments/3hlfap/ethereumpoolco_reliable_mining_pool/</a>
-                               <br> <br><a href="https://bitcoinforum.pl/viewtopic.php?f=27&t=227" target="_blank">https://bitcoinforum.pl/viewtopic.php?f=27&t=227</a>
-                               <br> <br><a href="https://forum.bits.media/index.php?/topic/16124-ethereum-ethereumpoolco-reliable-mining-pool/" target="_blank">https://forum.bits.media/index.php?/topic/16124-ethereum-ethereumpoolco-reliable-mining-pool/</a>
-                               <br> <br><a href="http://altcointalk.org/index.php/topic,499.new.html" target="_blank">http://altcointalk.org/index.php/topic,499.new.html</a>
-                               <br> <br><a href="http://bitcoingarden.tk/forum/index.php?topic=4533.new#new" target="_blank">http://bitcoingarden.tk/forum/index.php?topic=4533.new#new</a>
-                               <br> <br><a href="https://forum.bitcoin.co.id/threads/ethereum-ethereumpool-co-reliable-mining-pool.5114/" target="_blank">https://forum.bitcoin.co.id/threads/ethereum-ethereumpool-co-reliable-mining-pool.5114/</a>
-                               <br> <br><a href="https://bitcoinforum.com/alternative-cryptocurrencies/(ethereum)-ethereumpool-co-reliable-mining-pool/new/#new" target="_blank">https://bitcoinforum.com/alternative-cryptocurrencies/(ethereum)-ethereumpool-co-reliable-mining-pool/new/#new</a>
-                               <br> <br><a href="https://www.coinforum.de/topic/4170-ethereum-ethereumpoolco-reliable-mining-pool/" target="_blank">https://www.coinforum.de/topic/4170-ethereum-ethereumpoolco-reliable-mining-pool/</a>
-                               <br> <br><a href="https://bitsharestalk.org/index.php/topic,18116.0.html" target="_blank">https://bitsharestalk.org/index.php/topic,18116.0.html</a>
-                               <br> <br><a href="https://letstalkbitcoin.com/forum/post/ethereum-ethereumpoolco-reliable-mining-pool" target="_blank">https://letstalkbitcoin.com/forum/post/ethereum-ethereumpoolco-reliable-mining-pool</a>
-                        </div><!--//row-->
+                               <a href="https://bitcointalk.org" target="_blank">Link #1</a>
+                               </div><!--//row-->
                     </div>
                 </div><!--//row-->
                 <div id="form-messages"></div>
@@ -116,7 +103,7 @@
                                 <li><a href="../stats/miner/">Miner statistics</a></li>
                                 <li><a href="../how">How to start mine?</a></li>  
                                 <li><a href="../forums">Forum threads</a></li>                              
-                                <li><a href="mailto:ethereumpool@yandex.com">Support</a></li>
+                                <li><a href="mailto:mail@mail.com">Support</a></li>
                             </ul>
                         </div><!--//footer-col-inner-->
                     </div><!--//foooter-col-->
