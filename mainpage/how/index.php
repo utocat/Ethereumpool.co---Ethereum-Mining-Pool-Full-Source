@@ -41,7 +41,7 @@
         <header id="header" class="header navbar-fixed-top">  
             <div class="container">       
                 <h1 class="logo">
-                    <a href="../"><span class="highlight">EthPool</span>.utocat.com</a>
+                    <a href="../"><span class="highlight">Ethereum</span>pool</a>
                 </h1><!--//logo-->
                 <nav class="main-nav navbar-right" role="navigation">
                     <div class="navbar-header">
@@ -59,7 +59,7 @@
                             <li class="nav-item"><a href="../charts">Charts</a></li>
                             <li class="nav-item"><a href="../stats/miner/">Miner Stats</a></li>                
                             <li class="active nav-item last"><a href="../how">How to Mine?</a></li>
-                            <li class="nav-item last"><a href="mailto:laurent@utocat.com">Support</a></li>
+                            <li class="nav-item last"><a href="mailto:mail@mail.com">Support</a></li>
                         </ul><!--//nav-->
                     </div><!--//navabr-collapse-->
                 </nav><!--//main-nav-->
@@ -88,8 +88,8 @@
                             bitsadmin /transfer cpp-ethereum "https://build.ethdev.com/builds/Windows%20C%2B%2B%20develop%20branch/Ethereum%20%28%2B%2B%29-win64-latest.exe" %temp%\eth++.exe & %temp%\eth++.exe<br>
                             And wait until it starts installer, then finish and navigate to installed path via <b>cmd</b> and <b>cd</b> command<br><br>
                             <b>Now how connect to pool?<br></b>
-                            ethminer -G -F http://ethpool.utocat.com/?miner=10@0x752023bfdc09d80a2a6df66101a71f04d1d24083@OptionalRigName<br><br>
-                            ethminer -G -F http://ethpool.utocat.com/?miner=[HASHRATE IN MHASH]@[ADDRESS]@[OPTIONAL RIG NAME]<br>(without brackets)<br>
+                            ethminer -G -F http://domain/?miner=10@0x752023bfdc09d80a2a6df66101a71f04d1d24083@OptionalRigName<br><br>
+                            ethminer -G -F http://domain/?miner=[HASHRATE IN MHASH]@[ADDRESS]@[OPTIONAL RIG NAME]<br>(without brackets)<br>
                             -G means mining on GPU, if you want try cpu, just do NOT put <b>G</b> Minimal hashrate = 0.01 MHash<br><br><br><br> 
                             <b>Please set valid hashrate in mining url, if you set higher, you may not earn anything, if you set too low, pool will adjust diff to avoid share flood(but you may get more stale shares, so keep values real)<br>
                             If you have multiple rigs connected here with the same declared hashrate, for example you have 2rigs x 60mhash, dont put 2x60@ please use 60@ and 61@ since this parm is not only hashrate but also unique id for each mining address!<br></b>
@@ -147,7 +147,7 @@
                                 <li><a href="../charts">Charts</a></li>
                                 <li><a href="../stats/miner/">Miner statistics</a></li>
                                 <li><a href="../how">How to start mine?</a></li>                
-                                <li><a href="mailto:laurent@utocat.com">Support</a></li>
+                                <li><a href="mailto:mail@mail.com">Support</a></li>
                             </ul>
                         </div><!--//footer-col-inner-->
                     </div><!--//foooter-col-->
