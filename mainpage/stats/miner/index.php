@@ -39,16 +39,16 @@ if (!$miner) {
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-    <title>Miner Statistics - EthPool.utocat.com</title>
+    <title>Miner Statistics</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="EthPool.utocat.com is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)">
-    <meta name="author" content="EthPool.utocat.com">
+    <meta name="description" content="Etheruempool is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)">
+    <meta name="author" content="Ethereumpool">
     <meta property="og:type"               content="website" />
-    <meta property="og:title"              content="EthPool.utocat.com - Ethereum Mining Pool"/>
-    <meta property="og:description"        content="EthPool.utocat.com is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)"/>
+    <meta property="og:title"              content="Ethereum Mining Pool"/>
+    <meta property="og:description"        content="Ethereumpool is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)"/>
     <link rel="shortcut icon" href="../favicon.ico">  
     <meta name="keywords" content="eth,gpu,mining,mine,ethereum,calculator,profitability,profit,how,to,ether,ethers">
     <link href="http://fonts.googleapis.com/css?family=Merriweather+Sans:700,300italic,400italic,700italic,300,400" rel="stylesheet" type="text/css">
@@ -73,7 +73,7 @@ if (!$miner) {
         <header id="header" class="header navbar-fixed-top">  
             <div class="container">       
                 <h1 class="logo">
-                    <a href="../"><span class="highlight">EthPool</span>.utocat.com</a>
+                    <a href="../"><span class="highlight">Ethereum</span>pool</a>
                 </h1><!--//logo-->
                 <nav class="main-nav navbar-right" role="navigation">
                     <div class="navbar-header">
@@ -91,7 +91,7 @@ if (!$miner) {
                             <li class="nav-item"><a href="/charts">Charts</a></li>
                             <li class="active av-item"><a href="/stats/miner/">Miner Stats</a></li>              
                             <li class="nav-item last"><a href="/how">How to Mine?</a></li>
-                            <li class="nav-item last"><a href="mailto:laurent@utocat.com">Support</a></li>
+                            <li class="nav-item last"><a href="mailto:mail@mail.com">Support</a></li>
                         </ul><!--//nav-->
                     </div><!--//navabr-collapse-->
                 </nav><!--//main-nav-->
@@ -136,7 +136,7 @@ if (!$miner) {
                                 <li><a href="../charts">Charts</a></li>
                                 <li><a href="/stats/miner/">Miner statistics</a></li>
                                 <li><a href="/how">How to start mine?</a></li>                           
-                                <li><a href="mailto:laurent@utocat.com">Support</a></li>
+                                <li><a href="mailto:mail@mail.com">Support</a></li>
                             </ul>
                         </div><!--//footer-col-inner-->
                     </div><!--//foooter-col-->
@@ -218,16 +218,16 @@ echo '<!DOCTYPE html>
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-    <title>Statistics - EthPool.utocat.com</title>
+    <title>Statistics</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="EthPool.utocat.com is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)">
-    <meta name="author" content="EthPool.utocat.com">
+    <meta name="description" content="ethereumpool is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)">
+    <meta name="author" content="eth">
     <meta property="og:type"               content="website" />
-    <meta property="og:title"              content="EthPool.utocat.com - Ethereum Mining Pool"/>
-    <meta property="og:description"        content="EthPool.utocat.com is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)"/>
+    <meta property="og:title"              content="Ethereum Mining Pool"/>
+    <meta property="og:description"        content="ethereumpool is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)"/>
     <link rel="shortcut icon" href="../favicon.ico">  
     <meta name="keywords" content="eth,gpu,mining,mine,ethereum,calculator,profitability,profit,how,to,ether,ethers">
     <link href="http://fonts.googleapis.com/css?family=Merriweather+Sans:700,300italic,400italic,700italic,300,400" rel="stylesheet" type="text/css">
@@ -332,7 +332,7 @@ echo '<!DOCTYPE html>
                             <li class="active nav-item"><a href="/miner/">Miner Stats</a></li>              
                             <li class="nav-item last"><a href="/how">How to Mine?</a></li>
                             <li class="nav-item"><a href="/forums">Forum threads</a></li>
-                            <li class="nav-item last"><a href="mailto:laurent@utocat.com">Support</a></li>
+                            <li class="nav-item last"><a href="mailto:mail@mail.com">Support</a></li>
                         </ul><!--//nav-->
                     </div><!--//navabr-collapse-->
                 </nav><!--//main-nav-->
@@ -519,7 +519,7 @@ while ($row=mysqli_fetch_row($existResult)){
                                 <li><a href="/stats/miner/">Miner statistics</a></li>
                                 <li><a href="/how">How to start mine?</a></li>  
                                 <li><a href="/forums">Forum threads</a></li>                              
-                                <li><a href="mailto:laurent@utocat.com">Support</a></li>
+                                <li><a href="mailto:mail@mail.com">Support</a></li>
                             </ul>
                         </div><!--//footer-col-inner-->
                     </div><!--//foooter-col-->
