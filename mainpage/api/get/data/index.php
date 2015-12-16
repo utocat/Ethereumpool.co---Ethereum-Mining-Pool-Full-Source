@@ -37,7 +37,8 @@ $lol = mysql_fix_escape_string($lol);
 
 
 if ($data == 'hashrate_beta' || $type == '123') {
-$mysqli=mysqli_connect('Mysql_server_ip','Database_username','Database_password','Database_name') or die("Database Error");
+$configs = include('../../../config.php');
+$mysqli=mysqli_connect($config['host'], $config['username'], $config['password'], $config['bdd']) or die("Database Error");
 $existQuery = "SELECT hashrate,val_timestamp FROM stats ORDER BY id ASC";
 $existResult = mysqli_query($mysqli,$existQuery)or die("Database Error");
 $count = mysqli_num_rows($existResult);
@@ -93,7 +94,8 @@ echo ']';
 
 
 
-$mysqli=mysqli_connect('Mysql_server_ip','Database_username','Database_password','Database_name') or die("Database Error");
+$config = include('../../../config.php');
+$mysqli=mysqli_connect($config['host'], $config['username'], $config['password'], $config['bdd']) or die("Database Error");
 $existQuery = "SELECT hashrate,val_timestamp FROM pool_hashrate ORDER BY id ASC";
 $existResult = mysqli_query($mysqli,$existQuery)or die("Database Error");
 $count = mysqli_num_rows($existResult);
@@ -115,7 +117,8 @@ echo ']';
 
 } else if ($data == 'miner_hashrate' || $type == 'max' && $miner && !$worker && !$lol) {
 $x=0;
-$mysqli=mysqli_connect('Mysql_server_ip','Database_username','Database_password','Database_name') or die("Database Error");
+$config = include('../../../config.php');
+$mysqli=mysqli_connect($config['host'], $config['username'], $config['password'], $config['bdd']) or die("Database Error");
 	$existQuery = "SELECT hashrate,val_timestamp FROM miner_hashrate WHERE miner='$miner' ORDER BY id ASC";
 	$existResult = mysqli_query($mysqli,$existQuery)or die("Database Error");
 	$count = mysqli_num_rows($existResult);
@@ -151,7 +154,8 @@ echo ']';
 
 } else if ($data == 'worker_hashrate' || $type == 'max' && $miner && $worker) {
 
-$mysqli=mysqli_connect('Mysql_server_ip','Database_username','Database_password','Database_name') or die("Database Error");
+$config = include('../../../config.php');
+$mysqli=mysqli_connect($config['host'], $config['username'], $config['password'], $config['bdd']) or die("Database Error");
 $existQuery = "SELECT hashrate,val_timestamp FROM stats WHERE user='$miner' AND userid='$worker' ORDER BY id ASC";
 $existResult = mysqli_query($mysqli,$existQuery)or die("Database Error");
 $count = mysqli_num_rows($existResult);
@@ -176,8 +180,8 @@ echo ']';
 
 
 
-
-$mysqli=mysqli_connect('Mysql_server_ip','Database_username','Database_password','Database_name') or die("Database Error");
+$config = include('../../../config.php');
+$mysqli=mysqli_connect($config['host'], $config['username'], $config['password'], $config['bdd']) or die("Database Error");
 $existQuery = "SELECT value,var_timestamp FROM pool_balance ORDER BY id ASC";
 $existResult = mysqli_query($mysqli,$existQuery)or die("Database Error");
 $count = mysqli_num_rows($existResult);
@@ -202,7 +206,8 @@ echo ']';
 
 
 
-$mysqli=mysqli_connect('Mysql_server_ip','Database_username','Database_password','Database_name') or die("Database Error");
+$config = include('../../../config.php');
+$mysqli=mysqli_connect($config['host'], $config['username'], $config['password'], $config['bdd']) or die("Database Error");
 $existQuery = "SELECT value,var_timestamp FROM pool_workers ORDER BY id ASC";
 $existResult = mysqli_query($mysqli,$existQuery)or die("Database Error");
 $count = mysqli_num_rows($existResult);
@@ -227,7 +232,8 @@ echo ']';
 
 
 
-$mysqli=mysqli_connect('Mysql_server_ip','Database_username','Database_password','Database_name') or die("Database Error");
+$config = include('../../../config.php');
+$mysqli=mysqli_connect($config['host'], $config['username'], $config['password'], $config['bdd']) or die("Database Error");
 $existQuery = "SELECT value,var_timestamp FROM pool_miners ORDER BY id ASC";
 $existResult = mysqli_query($mysqli,$existQuery)or die("Database Error");
 $count = mysqli_num_rows($existResult);
@@ -250,7 +256,8 @@ echo ']';
 } else if ($data == '_miner_balance' && $miner && $lol) {
 
 
-$mysqli=mysqli_connect('Mysql_server_ip','Database_username','Database_password','Database_name') or die("Database Error");
+$config = include('../../../config.php');
+$mysqli=mysqli_connect($config['host'], $config['username'], $config['password'], $config['bdd']) or die("Database Error");
 $existQuery = "SELECT value,var_timestamp FROM miner_balance WHERE miner='$miner' ORDER BY id ASC";
 $existResult = mysqli_query($mysqli,$existQuery)or die("Database Error");
 $count = mysqli_num_rows($existResult);

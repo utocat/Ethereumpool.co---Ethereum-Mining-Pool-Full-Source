@@ -1,6 +1,7 @@
 <?php
 error_reporting(error_reporting() & ~E_NOTICE);
 include('/var/www4/BigInteger.php');
+$config = include('../../config.php');
 $ether_wei = 1000000000000000000;
 
 
@@ -53,8 +54,7 @@ $data = array("jsonrpc" => "2.0", "method" => "eth_accounts", "params" => [], "i
 	$gasprice = 1000000000000000;
 
 
-
-$mysqli=mysqli_connect('Mysql_server_ip','Database_username','Database_password','Database_name') or die("Database Error");
+$mysqli=mysqli_connect($config['host'], $config['username'], $config['password'], $config['bdd']) or die("Database Error");
 $existQuery = "SELECT time,txid,balance FROM payout_history";
 $existResult = mysqli_query($mysqli,$existQuery)or die("Database Error");
 while ($row=mysqli_fetch_row($existResult)){

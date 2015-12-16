@@ -1,8 +1,9 @@
 <?php
 	error_reporting(error_reporting() & ~E_NOTICE);
 	include('/var/www4/BigInteger.php');
+	$config = include('../config.php');
 
-	$mysqli=mysqli_connect('Mysql_server_ip','Database_username','Database_password','Database_name') or die("Database Error");
+	$mysqli=mysqli_connect($config['host'], $config['username'], $config['password'], $config['bdd']) or die("Database Error");
 	$df = 0;
 	$m = new Memcached();
 	$m->addServer('localhost', 11211);
@@ -225,7 +226,7 @@ if (!$result3) {
 			$block_info_last = $block_info_last['result'];
 			$minedBy = $block_info_last['miner'];
 			if ($minedBy == $coinbase) {
-				$mysqli=mysqli_connect('Mysql_server_ip','Database_username','Database_password','Database_name') or die("Database Error");
+				$mysqli=mysqli_connect($config['host'], $config['username'], $config['password'], $config['bdd']) or die("Database Error");
 				$found = 1;
 				$tas22k = 'INSERT INTO blocks (blockid) VALUES ("'.$blockdecimalrow.'")';
 				$query = mysqli_query($mysqli,$tas22k) or die("Database Error");

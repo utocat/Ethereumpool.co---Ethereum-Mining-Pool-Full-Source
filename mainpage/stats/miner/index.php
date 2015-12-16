@@ -2,6 +2,7 @@
 error_reporting(error_reporting() & ~E_NOTICE);
 $m = new Memcached();
 include('/var/www4/BigInteger.php');
+$config = include('../../../config.php');
 $m->addServer('localhost', 11211);
 $ether_wei = 1000000000000000000;
 
@@ -38,28 +39,28 @@ if (!$miner) {
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-    <title>Miner Statistics - Ethereumpool.co</title>
+    <title>Miner Statistics - EthPool.utocat.com</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ethereum Pool.Co is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)">
-    <meta name="author" content="Ethereumpool.co">
+    <meta name="description" content="EthPool.utocat.com is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)">
+    <meta name="author" content="EthPool.utocat.com">
     <meta property="og:type"               content="website" />
-    <meta property="og:title"              content="Ethereumpool.co - Ethereum Mining Pool"/>
-    <meta property="og:description"        content="Ethereum Pool.Co is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)"/>
+    <meta property="og:title"              content="EthPool.utocat.com - Ethereum Mining Pool"/>
+    <meta property="og:description"        content="EthPool.utocat.com is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)"/>
     <link rel="shortcut icon" href="../favicon.ico">  
     <meta name="keywords" content="eth,gpu,mining,mine,ethereum,calculator,profitability,profit,how,to,ether,ethers">
     <link href="http://fonts.googleapis.com/css?family=Merriweather+Sans:700,300italic,400italic,700italic,300,400" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <!-- Global CSS -->
-    <link rel="stylesheet" href="http://ethereumpool.co/assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">   
     <!-- Plugins CSS -->    
-    <link rel="stylesheet" href="http://ethereumpool.co/assets/plugins/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="http://ethereumpool.co/assets/plugins/elegant_font/css/style.css">
+    <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/assets/plugins/elegant_font/css/style.css">
     <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="http://ethereumpool.co/assets/css/styles-2.css">
+    <link id="theme-style" rel="stylesheet" href="/assets/css/styles-2.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -72,7 +73,7 @@ if (!$miner) {
         <header id="header" class="header navbar-fixed-top">  
             <div class="container">       
                 <h1 class="logo">
-                    <a href="../"><span class="highlight">Ethereum</span>Pool.co</a>
+                    <a href="../"><span class="highlight">EthPool</span>.utocat.com</a>
                 </h1><!--//logo-->
                 <nav class="main-nav navbar-right" role="navigation">
                     <div class="navbar-header">
@@ -85,13 +86,12 @@ if (!$miner) {
                     </div><!--//navbar-header-->
                     <div id="navbar-collapse" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li class="nav-item"><a href="http://ethereumpool.co/">Home</a></li>
-                            <li class="nav-item"><a href="http://ethereumpool.co/stats">Stats</a></li>
-                            <li class="nav-item"><a href="http://ethereumpool.co/charts">Charts</a></li>
-                            <li class="active av-item"><a href="http://ethereumpool.co/stats/miner/">Miner Stats</a></li>              
-                            <li class="nav-item last"><a href="http://ethereumpool.co/how">How to Mine?</a></li>
-                            <li class="nav-item"><a href="http://ethereumpool.co/forums">Forum threads</a></li>
-                            <li class="nav-item last"><a href="mailto:ethereumpool@yandex.com">Support</a></li>
+                            <li class="nav-item"><a href="/">Home</a></li>
+                            <li class="nav-item"><a href="/stats">Stats</a></li>
+                            <li class="nav-item"><a href="/charts">Charts</a></li>
+                            <li class="active av-item"><a href="/stats/miner/">Miner Stats</a></li>              
+                            <li class="nav-item last"><a href="/how">How to Mine?</a></li>
+                            <li class="nav-item last"><a href="mailto:laurent@utocat.com">Support</a></li>
                         </ul><!--//nav-->
                     </div><!--//navabr-collapse-->
                 </nav><!--//main-nav-->
@@ -131,13 +131,12 @@ if (!$miner) {
                         <div class="footer-col-inner">
                             <h3 class="sub-title">Quick Links</h3>
                             <ul class="list-unstyled">
-                                <li><a href="http://ethereumpool.co/">Home</a></li>
-                                <li><a href="http://ethereumpool.co/stats">Pool statistics</a></li>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/stats">Pool statistics</a></li>
                                 <li><a href="../charts">Charts</a></li>
-                                <li><a href="http://ethereumpool.co/stats/miner/">Miner statistics</a></li>
-                                <li><a href="http://ethereumpool.co/how">How to start mine?</a></li>  
-                                <li><a href="http://ethereumpool.co/forums">Forum threads</a></li>                              
-                                <li><a href="mailto:ethereumpool@yandex.com">Support</a></li>
+                                <li><a href="/stats/miner/">Miner statistics</a></li>
+                                <li><a href="/how">How to start mine?</a></li>                           
+                                <li><a href="mailto:laurent@utocat.com">Support</a></li>
                             </ul>
                         </div><!--//footer-col-inner-->
                     </div><!--//foooter-col-->
@@ -159,24 +158,24 @@ if (!$miner) {
                 </div>   
             </div>        
         </div><!--//footer-content-->    
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/jquery-1.11.2.min.js"></script>
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/jquery-migrate-1.2.1.min.js"></script>
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/bootstrap-hover-dropdown.min.js"></script>       
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/back-to-top.js"></script>             
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>                                                                  
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>     
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/FitVids/jquery.fitvids.js"></script>
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/js/main.js"></script>     
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/jquery.validate.min.js"></script> 
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/js/form-validation-custom.js"></script> 
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/isMobile/isMobile.min.js"></script>
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/js/form-mobile-fix.js"></script>     
+    <script  type="text/javascript" src="/assets/plugins/jquery-1.11.2.min.js"></script>
+    <script  type="text/javascript" src="/assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+    <script  type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+    <script  type="text/javascript" src="/assets/plugins/bootstrap-hover-dropdown.min.js"></script>       
+    <script  type="text/javascript" src="/assets/plugins/back-to-top.js"></script>             
+    <script  type="text/javascript" src="/assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>                                                                  
+    <script  type="text/javascript" src="/assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>     
+    <script  type="text/javascript" src="/assets/plugins/FitVids/jquery.fitvids.js"></script>
+    <script  type="text/javascript" src="/assets/js/main.js"></script>     
+    <script  type="text/javascript" src="/assets/plugins/jquery.validate.min.js"></script> 
+    <script  type="text/javascript" src="/assets/js/form-validation-custom.js"></script> 
+    <script  type="text/javascript" src="/assets/plugins/isMobile/isMobile.min.js"></script>
+    <script  type="text/javascript" src="/assets/js/form-mobile-fix.js"></script>     
 </body>
 </html>');
 }
 $miner = mysql_fix_escape_string($miner);
-$mysqli=mysqli_connect('Mysql_server_ip','Database_username','Database_password','Database_name') or die("Database Error");
+$mysqli=mysqli_connect($config['host'], $config['username'], $config['password'], $config['bdd']) or die("Database Error");
 $existQuery = "SELECT balance FROM miners WHERE address='$miner'";
 $existResult = mysqli_query($mysqli,$existQuery)or die("Database Error");
 $existRow = mysqli_fetch_array($existResult);
@@ -219,28 +218,28 @@ echo '<!DOCTYPE html>
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-    <title>Statistics - Ethereumpool.co</title>
+    <title>Statistics - EthPool.utocat.com</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ethereum Pool.Co is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)">
-    <meta name="author" content="Ethereumpool.co">
+    <meta name="description" content="EthPool.utocat.com is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)">
+    <meta name="author" content="EthPool.utocat.com">
     <meta property="og:type"               content="website" />
-    <meta property="og:title"              content="Ethereumpool.co - Ethereum Mining Pool"/>
-    <meta property="og:description"        content="Ethereum Pool.Co is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)"/>
+    <meta property="og:title"              content="EthPool.utocat.com - Ethereum Mining Pool"/>
+    <meta property="og:description"        content="EthPool.utocat.com is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)"/>
     <link rel="shortcut icon" href="../favicon.ico">  
     <meta name="keywords" content="eth,gpu,mining,mine,ethereum,calculator,profitability,profit,how,to,ether,ethers">
     <link href="http://fonts.googleapis.com/css?family=Merriweather+Sans:700,300italic,400italic,700italic,300,400" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <!-- Global CSS -->
-    <link rel="stylesheet" href="http://ethereumpool.co/assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">   
     <!-- Plugins CSS -->    
-    <link rel="stylesheet" href="http://ethereumpool.co/assets/plugins/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="http://ethereumpool.co/assets/plugins/elegant_font/css/style.css">
+    <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/assets/plugins/elegant_font/css/style.css">
     <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="http://ethereumpool.co/assets/css/styles-2.css">
+    <link id="theme-style" rel="stylesheet" href="/assets/css/styles-2.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -327,13 +326,13 @@ echo '<!DOCTYPE html>
                     </div><!--//navbar-header-->
                     <div id="navbar-collapse" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li class="nav-item"><a href="http://ethereumpool.co/">Home</a></li>
-                            <li class="nav-item"><a href="http://ethereumpool.co/stats">Stats</a></li>
-                            <li class="nav-item"><a href="http://ethereumpool.co/charts">Charts</a></li>
-                            <li class="active nav-item"><a href="http://ethereumpool.co/stats/miner/">Miner Stats</a></li>              
-                            <li class="nav-item last"><a href="http://ethereumpool.co/how">How to Mine?</a></li>
-                            <li class="nav-item"><a href="http://ethereumpool.co/forums">Forum threads</a></li>
-                            <li class="nav-item last"><a href="mailto:ethereumpool@yandex.com">Support</a></li>
+                            <li class="nav-item"><a href="/">Home</a></li>
+                            <li class="nav-item"><a href="/stats">Stats</a></li>
+                            <li class="nav-item"><a href="/charts">Charts</a></li>
+                            <li class="active nav-item"><a href="/miner/">Miner Stats</a></li>              
+                            <li class="nav-item last"><a href="/how">How to Mine?</a></li>
+                            <li class="nav-item"><a href="/forums">Forum threads</a></li>
+                            <li class="nav-item last"><a href="mailto:laurent@utocat.com">Support</a></li>
                         </ul><!--//nav-->
                     </div><!--//navabr-collapse-->
                 </nav><!--//main-nav-->
@@ -450,7 +449,7 @@ echo '<br><br>All Shares Power in this round: '.$totalMinersDiffPower->toString(
 echo '<br>My Shares Power in this round: '.$ThisDiffPower->toString();
 echo '<br>My % in unprocessed blocks: '.sprintf('%f', floatval($ThisDiffPower->toString())/floatval($totalMinersDiffPower->toString())*100).'%';
 echo '<br>Shares history in total: '.$totalSharesHistory;
-echo '<br>Invalid shares: '.$totalInvalidShares.' <a href="http://ethereumpool.co/invalid" target="_blank">(should be "0" if not click!)</a>';
+echo '<br>Invalid shares: '.$totalInvalidShares.' <a href="/invalid" target="_blank">(should be "0" if not click!)</a>';
 
 echo '<br><br><b>Est. revenue with avg diff from 128 blocks</b><table border="1" style="width:100%">';
 echo '<tr><td>Minute</td><td>'.sprintf('%f', $rev_min).' eth</td><td>'.sprintf('%f', $rev_min*$eth_price_usd).' $</td></tr>';
@@ -469,7 +468,7 @@ for ($i=0; $i < $workers_count; $i++) {
         if (!$miner_rig) {
           $miner_rig = 'rig';
         }
-        echo '<tr><td><a href="http://ethereumpool.co/stats/miner/worker/?address='.$miner.'&worker='.$newMiners[$i][0].'">Worker ID:<b>'.$newMiners[$i][0].'-'.$miner_rig.'</b></a><br>Real hashrate: '.round($newMiners[$i][1]).' hash/s  -> </b>'.$mhash_rl.' MHASH/s';
+        echo '<tr><td><a href="/stats/miner/worker/?address='.$miner.'&worker='.$newMiners[$i][0].'">Worker ID:<b>'.$newMiners[$i][0].'-'.$miner_rig.'</b></a><br>Real hashrate: '.round($newMiners[$i][1]).' hash/s  -> </b>'.$mhash_rl.' MHASH/s';
 
     echo '</td></tr>';
 }
@@ -514,13 +513,13 @@ while ($row=mysqli_fetch_row($existResult)){
                         <div class="footer-col-inner">
                             <h3 class="sub-title">Quick Links</h3>
                             <ul class="list-unstyled">
-                                <li><a href="http://ethereumpool.co/">Home</a></li>
-                                <li><a href="http://ethereumpool.co/stats">Pool statistics</a></li>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/stats">Pool statistics</a></li>
                                 <li><a href="../charts">Charts</a></li>
-                                <li><a href="http://ethereumpool.co/stats/miner/">Miner statistics</a></li>
-                                <li><a href="http://ethereumpool.co/how">How to start mine?</a></li>  
-                                <li><a href="http://ethereumpool.co/forums">Forum threads</a></li>                              
-                                <li><a href="mailto:ethereumpool@yandex.com">Support</a></li>
+                                <li><a href="/stats/miner/">Miner statistics</a></li>
+                                <li><a href="/how">How to start mine?</a></li>  
+                                <li><a href="/forums">Forum threads</a></li>                              
+                                <li><a href="mailto:laurent@utocat.com">Support</a></li>
                             </ul>
                         </div><!--//footer-col-inner-->
                     </div><!--//foooter-col-->
@@ -545,26 +544,26 @@ while ($row=mysqli_fetch_row($existResult)){
     
  
     <!-- Main Javascript -->          
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/jquery-1.11.2.min.js"></script>
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/jquery-migrate-1.2.1.min.js"></script>
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/bootstrap-hover-dropdown.min.js"></script>       
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/back-to-top.js"></script>             
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>                                                                  
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>     
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/FitVids/jquery.fitvids.js"></script>
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/js/main.js"></script>     
+    <script  type="text/javascript" src="/assets/plugins/jquery-1.11.2.min.js"></script>
+    <script  type="text/javascript" src="/assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+    <script  type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+    <script  type="text/javascript" src="/assets/plugins/bootstrap-hover-dropdown.min.js"></script>       
+    <script  type="text/javascript" src="/assets/plugins/back-to-top.js"></script>             
+    <script  type="text/javascript" src="/assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>                                                                  
+    <script  type="text/javascript" src="/assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>     
+    <script  type="text/javascript" src="/assets/plugins/FitVids/jquery.fitvids.js"></script>
+    <script  type="text/javascript" src="/assets/js/main.js"></script>     
     
     <!-- Form Validation -->
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/jquery.validate.min.js"></script> 
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/js/form-validation-custom.js"></script> 
+    <script  type="text/javascript" src="/assets/plugins/jquery.validate.min.js"></script> 
+    <script  type="text/javascript" src="/assets/js/form-validation-custom.js"></script> 
     
     <!-- Form iOS fix -->
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/isMobile/isMobile.min.js"></script>
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/js/form-mobile-fix.js"></script>     
+    <script  type="text/javascript" src="/assets/plugins/isMobile/isMobile.min.js"></script>
+    <script  type="text/javascript" src="/assets/js/form-mobile-fix.js"></script>     
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="http://ethereumpool.co/charts/js/highstock.js"></script>
-    <script src="http://ethereumpool.co/charts/js/modules/exporting.js"></script> 
+    <script src="/charts/js/highstock.js"></script>
+    <script src="/charts/js/modules/exporting.js"></script> 
     
         <script>
         $(".button-fill").hover(function () {
@@ -575,7 +574,7 @@ while ($row=mysqli_fetch_row($existResult)){
     </script>
     <script type="text/javascript">
 $(function () {
-    $.getJSON("http://ethereumpool.co/api/get/data/index.php?data=miner_hashrate&range=max&dtx='.$miner.'", function (data) {
+    $.getJSON("/api/get/data/index.php?data=miner_hashrate&range=max&dtx='.$miner.'", function (data) {
         $("#container").highcharts("StockChart", {
             rangeSelector: {
             buttons: [{
@@ -653,7 +652,7 @@ $(function () {
 });
 
 function balance() {
-    $.getJSON("http://ethereumpool.co/api/get/data/index.php?data=_miner_balance&range=max&rr=1&dtx='.$miner.'", function (data) {
+    $.getJSON("/api/get/data/index.php?data=_miner_balance&range=max&rr=1&dtx='.$miner.'", function (data) {
 
 
 
