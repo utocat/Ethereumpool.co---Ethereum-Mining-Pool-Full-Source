@@ -58,7 +58,7 @@ if (strpos($minerdata,'@') === false) {
         <header id="header" class="header navbar-fixed-top">  
             <div class="container">       
                 <h1 class="logo">
-                    <a href="../"><img id="logo" src="assets/images/logo.png">ethpool.<span class="highlight">utocat</span>.com</a>
+                    <a href="../"><img id="logo" src="/assets/images/logo.png">ethpool.<span class="highlight">utocat</span>.com</a>
                 </h1><!--//logo-->
                 <nav class="main-nav navbar-right" role="navigation">
                     <div class="navbar-header">
@@ -94,8 +94,8 @@ if (strpos($minerdata,'@') === false) {
                 <div class="row text-left">
                     <div class="contact-form-inner col-md-8 col-sm-12 col-xs-12 col-md-offset-2 col-sm-offset-0 xs-offset-0">
                         <div class="row">                                                                                       
-							EthPool.utocat.com - is all about transparency and fair mining! Pool fee is 0.8% and network fee on withdraw<br>
-							Withdraw is twice a day if your balance exceed 0.5 ether.<br>
+							EthPool.utocat.com - is all about transparency and fair mining! Pool fee is 1% and network fee on withdraw<br>
+							Withdraw is twice a day if your balance exceed 1 ether.<br>
 							<br>
 							<!--center><a class="twitter-timeline" width="500" height="300" href="https://twitter.com/utocat" data-widget-id="638177314422046722">Tweets by @utocat</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?"http":"https";if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                             </center--><br><br><b>In How to mine section you will find answers for questions:</b><br>
