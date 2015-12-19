@@ -18,6 +18,13 @@ p {
   line-height: 1.5;
 }
 
+#logo {
+  width: 50px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  margin-top: 4px;
+}
+
 @font-face {
   font-family: "Din-Light";
   font-style: normal;
@@ -326,7 +333,7 @@ body.no-header-wrapper {
   text-decoration: none;
 }
 .header h1.logo a .highlight {
-  color: #71e08b;
+  color: #bbc0dd;
 }
 .header .main-nav .navbar-toggle {
   margin-right: 0;
