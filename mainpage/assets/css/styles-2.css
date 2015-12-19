@@ -87,13 +87,13 @@ a.btn-cta,
 }
 a.btn-cta-primary,
 .btn-cta-primary {
-  background: #2eb9de;
+  background: #7f86b3;
   border: none;
   color: #fff;
 }
 a.btn-cta-primary:hover,
 .btn-cta-primary:hover {
-  background: #21acd1;
+  background: #bbc0dd;
   border: none;
   color: #fff;
 }
