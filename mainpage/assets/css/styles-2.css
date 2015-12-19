@@ -46,6 +46,10 @@ p {
   src: url("../fonts/DIN-Bold.ttf") format("truetype");
 }
 
+.button-fill.grey {
+   background: #7f86b3 !important;
+}
+
 a {
   color: #bbc0dd;
   -webkit-transition: all 0.4s ease-in-out;
