@@ -29,21 +29,21 @@ p {
   font-family: "Din-Light";
   font-style: normal;
   font-weight: 400;
-  src: url("assets/fonts/DIN-Light.ttf") format("truetype");
+  src: url("../fonts/DIN-Light.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Din-Medium";
   font-style: normal;
   font-weight: 400;
-  src: url("assets/fonts/DIN-Medium.ttf") format("truetype");
+  src: url("../fonts/DIN-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Din-Bold";
   font-style: normal;
   font-weight: 400;
-  src: url("assets/fonts/DIN-Bold.ttf") format("truetype");
+  src: url("../fonts/DIN-Bold.ttf") format("truetype");
 }
 
 a {
