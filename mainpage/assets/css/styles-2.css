@@ -110,7 +110,7 @@ a.btn-cta-secondary:hover,
   color: #fff;
 }
 .highlight {
-  color: #71e08b;
+  color: #7f86b3;
 }
 .form-control {
   -webkit-box-shadow: none;
@@ -142,7 +142,7 @@ a.btn-cta-secondary:hover,
   box-shadow: none;
 }
 .text-highlight {
-  color: #21973d;
+  color: #bbc0dd;
 }
 input[type="text"],
 input[type="email"],
@@ -449,7 +449,7 @@ body.no-header-wrapper {
   opacity: 1;
 }
 .header .main-nav .nav .dropdown-menu a:hover {
-  background: #2ac14d;
+  background: #7f86b3;
   color: #fff;
 }
 /* Override bootstrap default */
@@ -823,10 +823,10 @@ body.no-header-wrapper {
   font-weight: 800;
 }
 .cta-section .contact-info a {
-  color: #86e59c;
+  color: #7f86b3;
 }
 .cta-section .contact-info a:hover {
-  color: #71e08b;
+  color: #7f86b3;
 }
 /* ======= Latest blog posts ======= */
 .latest-blog {
@@ -1006,7 +1006,7 @@ body.no-header-wrapper {
   color: #c6c6c6;
 }
 .breadcrumbs a:hover {
-  color: #71e08b;
+  color: #7f86b3;
 }
 .breadcrumbs .breadcrumbs-list li {
   padding-right: 0;
