@@ -180,7 +180,7 @@ echo ']';
 
 
 
-$config = include('../../../config.php');
+$config = include('../../../../config.php');
 $mysqli=mysqli_connect($config['host'], $config['username'], $config['password'], $config['bdd']) or die("Database Error");
 $existQuery = "SELECT value,var_timestamp FROM pool_balance ORDER BY id ASC";
 $existResult = mysqli_query($mysqli,$existQuery)or die("Database Error");
