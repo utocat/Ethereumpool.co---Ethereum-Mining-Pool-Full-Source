@@ -318,7 +318,7 @@ body.no-header-wrapper {
   font-size: 12px;
 }
 .header h1.logo {
-  font-family: "Russo One", arial, sans-serif;
+  font-family: "Din-Bold";
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 800;
@@ -360,7 +360,7 @@ body.no-header-wrapper {
   margin-right: 15px;
 }
 .header .main-nav .nav .nav-item.active > a {
-  color: #71e08b;
+  color: #bbc0dd;
   background: none;
   font-weight: bold;
 }
@@ -368,7 +368,7 @@ body.no-header-wrapper {
   color: #fff;
 }
 .header .main-nav .nav .nav-item a:hover {
-  color: #71e08b;
+  color: #bbc0dd;
   background: none;
 }
 .header .main-nav .nav .nav-item a:focus {
@@ -380,7 +380,7 @@ body.no-header-wrapper {
   background: none;
 }
 .header .main-nav .nav .nav-item.active {
-  color: #71e08b;
+  color: #bbc0dd;
 }
 .header .main-nav .nav .nav-item.last {
   margin-right: 0;
@@ -389,7 +389,7 @@ body.no-header-wrapper {
   position: relative;
 }
 .header .main-nav .nav.active > a {
-  background: #47d769;
+  background: #bbc0dd;
   color: #fff;
   color: rgba(255, 255, 255, 0.8);
 }
@@ -438,7 +438,7 @@ body.no-header-wrapper {
   top: -10px;
 }
 .header .main-nav .nav .dropdown-menu a {
-  border-bottom: 1px solid #32d258;
+  border-bottom: 1px solid #bbc0dd;
   padding: 8px 20px;
   color: #fff;
   -webkit-opacity: 1;
@@ -497,7 +497,7 @@ body.no-header-wrapper {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 56px;
-  color: #71e08b;
+  color: #bbc0dd;
 }
 .home-promo .title .bottom {
   font-family: 'Merriweather Sans', arial, sans-serif;
@@ -672,7 +672,7 @@ body.no-header-wrapper {
   color: #909cb0;
 }
 .latest-work .item .content .link a:hover {
-  color: #71e08b;
+  color: #bbc0dd;
 }
 .latest-work .item .content .link .fa {
   color: #909cb0;
