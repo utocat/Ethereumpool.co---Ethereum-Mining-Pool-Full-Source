@@ -10,7 +10,7 @@ $m->set('state_work',1);
 
 ////////////////////////////////////////LOGS////////////////////////////////////
 $file = 'withdraw_log_';
-$file = '/var/www4/block_processing/'.$file.'='.date('Y M d').'.txt';
+$file = '/home/admin/log/'.$file.'='.date('Y M d').'.txt';
 if(!file_exists($file)) 
 { 
   $fh = fopen($file, 'w');

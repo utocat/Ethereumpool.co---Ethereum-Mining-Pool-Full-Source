@@ -246,7 +246,7 @@ echo '<!DOCTYPE html>
         <header id="header" class="header navbar-fixed-top">  
             <div class="container">       
                 <h1 class="logo">
-                    <a href="../"><span class="highlight">EthPool</span>.utocat.com</a>
+                    <a href="../"><img id="logo" src="/assets/images/logo.png">ethpool.<span class="highlight">utocat</span>.com</a>
                 </h1><!--//logo-->
                 <nav class="main-nav navbar-right" role="navigation">
                     <div class="navbar-header">
@@ -334,8 +334,7 @@ echo '<!DOCTYPE html>
                                 <li><a href="../stats">Pool statistics</a></li>
                                 <li><a href="../charts">Charts</a></li>
                                 <li><a href="../stats/miner/">Miner statistics</a></li>
-                                <li><a href="../how">How to start mine?</a></li>  
-                                <li><a href="../forums">Forum threads</a></li>                              
+                                <li><a href="../how">How to start mine?</a></li>                        
                                 <li><a href="mailto:laurent@utocat.com">Support</a></li>
                             </ul>
                         </div><!--//footer-col-inner-->

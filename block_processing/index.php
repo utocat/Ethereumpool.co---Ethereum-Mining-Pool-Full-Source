@@ -169,7 +169,7 @@ if (!$result3) {
 	}
 	$ether_wei = 1000000000000000000;
 
-	$pool_fee_revenue = '0x9284e52d64d888f2aa1bb62a38f3b5259487376a';  //Pool fee revenue
+	$pool_fee_revenue = '0x50e00de2c5cc4e456cf234fcb1a0efa367ed016e';  //Pool fee revenue
 	$poolFee = 100-1;  // fee -> 1%
 	$current .= "\nBlock size:".$block_coins_size->toString().'';
 	$current .= "\nPool fee:".$poolFee.'';
