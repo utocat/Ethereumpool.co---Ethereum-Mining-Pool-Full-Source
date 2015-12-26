@@ -97,15 +97,9 @@ if (strpos($minerdata,'@') === false) {
 							EthPool.utocat.com - is all about transparency and fair mining! Pool fee is 1% and network fee on withdraw<br>
 							Withdraw is twice a day if your balance exceed 1 ether.<br>
 							<br>
-                            <center><a class="twitter-timeline"
-                                    data-widget-id="600720083413962752"
-                                    href="https://twitter.com/ethpool_utocat"
-                                    data-tweet-limit="3">
-                                    Tweets by @ethpool_utocat
-                                    </a>
+							<center><a class="twitter-timeline" width="500" height="300" href="https://twitter.com/utocat" data-widget-id="638177314422046722">Tweets by @ethpool_utocat</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?"http":"https";if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                             </center>
-							<!--center><a class="twitter-timeline" width="500" height="300" href="https://twitter.com/utocat" data-widget-id="638177314422046722">Tweets by @utocat</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?"http":"https";if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                            </center--><br><br><b>In How to mine section you will find answers for questions:</b><br>
+                            <br><br><b>In How to mine section you will find answers for questions:</b><br>
 							How connect to pool?<br>
                             How to set up ethereum client (wallet)?<br>
                             How to use ethereum?<br>
