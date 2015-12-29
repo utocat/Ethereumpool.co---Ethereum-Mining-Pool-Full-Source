@@ -390,9 +390,7 @@ $hashrate_real = $hashrate_real / 5;
 
 
 $firstKey = 'eth_price_current';
-$result1 = $m->get($firstKey);
-$block_info_last = json_decode($result1, true); 
-$eth_price_usd = $block_info_last['price']['usd'];
+$eth_price_usd = $m->get($firstKey);
 
 $firstKey = 'basic_stats';
 $result1 = $m->get($firstKey);
