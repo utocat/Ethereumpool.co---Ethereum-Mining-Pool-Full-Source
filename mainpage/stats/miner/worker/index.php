@@ -68,12 +68,12 @@ if (!$miner || !$worker) {
     <link href="http://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <!-- Global CSS -->
-    <link rel="stylesheet" href="http://ethereumpool.co/assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <link rel="stylesheet" href="../../../assets/plugins/bootstrap/css/bootstrap.min.css">   
     <!-- Plugins CSS -->    
-    <link rel="stylesheet" href="http://ethereumpool.co/assets/plugins/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="http://ethereumpool.co/assets/plugins/elegant_font/css/style.css">
+    <link rel="stylesheet" href="../../../assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../../../assets/plugins/elegant_font/css/style.css">
     <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="http://ethereumpool.co/assets/css/styles-2.css">
+    <link id="theme-style" rel="stylesheet" href="../../../assets/css/styles-2.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -171,19 +171,19 @@ if (!$miner || !$worker) {
                 </div>   
             </div>        
         </div><!--//footer-content-->    
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/jquery-1.11.2.min.js"></script>
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/jquery-migrate-1.2.1.min.js"></script>
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/bootstrap-hover-dropdown.min.js"></script>       
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/back-to-top.js"></script>             
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>                                                                  
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>     
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/FitVids/jquery.fitvids.js"></script>
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/js/main.js"></script>     
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/jquery.validate.min.js"></script> 
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/js/form-validation-custom.js"></script> 
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/isMobile/isMobile.min.js"></script>
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/js/form-mobile-fix.js"></script>     
+    <script  type="text/javascript" src="../../../assets/plugins/jquery-1.11.2.min.js"></script>
+    <script  type="text/javascript" src="../../../assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+    <script  type="text/javascript" src="../../../assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+    <script  type="text/javascript" src="../../../assets/plugins/bootstrap-hover-dropdown.min.js"></script>       
+    <script  type="text/javascript" src="../../../assets/plugins/back-to-top.js"></script>             
+    <script  type="text/javascript" src="../../../assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>                                                                  
+    <script  type="text/javascript" src="../../../assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>     
+    <script  type="text/javascript" src="../../../assets/plugins/FitVids/jquery.fitvids.js"></script>
+    <script  type="text/javascript" src="../../../assets/js/main.js"></script>     
+    <script  type="text/javascript" src="../../../assets/plugins/jquery.validate.min.js"></script> 
+    <script  type="text/javascript" src="../../../assets/js/form-validation-custom.js"></script> 
+    <script  type="text/javascript" src="../../../assets/plugins/isMobile/isMobile.min.js"></script>
+    <script  type="text/javascript" src="../../../assets/js/form-mobile-fix.js"></script>     
 </body>
 </html>');
 }
@@ -209,12 +209,12 @@ echo '<!DOCTYPE html>
     <link href="http://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <!-- Global CSS -->
-    <link rel="stylesheet" href="http://ethereumpool.co/assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <link rel="stylesheet" href="../../../assets/plugins/bootstrap/css/bootstrap.min.css">   
     <!-- Plugins CSS -->    
-    <link rel="stylesheet" href="http://ethereumpool.co/assets/plugins/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="http://ethereumpool.co/assets/plugins/elegant_font/css/style.css">
+    <link rel="stylesheet" href="../../../assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../../../assets/plugins/elegant_font/css/style.css">
     <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="http://ethereumpool.co/assets/css/styles-2.css">
+    <link id="theme-style" rel="stylesheet" href="../../../assets/css/styles-2.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -288,7 +288,7 @@ echo '<!DOCTYPE html>
         <header id="header" class="header navbar-fixed-top">  
             <div class="container">       
                 <h1 class="logo">
-                    <a href="../"><span class="highlight">Ethereum</span>Pool.co</a>
+                    <a href="../"><img id="logo" src="/assets/images/logo.png">ethpool.<span class="highlight">utocat</span>.com</a>
                 </h1><!--//logo-->
                 <nav class="main-nav navbar-right" role="navigation">
                     <div class="navbar-header">
@@ -380,26 +380,26 @@ echo '</center><br><div id="container"><center>Loading chart...</center></div>';
     
  
     <!-- Main Javascript -->          
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/jquery-1.11.2.min.js"></script>
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/jquery-migrate-1.2.1.min.js"></script>
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/bootstrap-hover-dropdown.min.js"></script>       
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/back-to-top.js"></script>             
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>                                                                  
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>     
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/FitVids/jquery.fitvids.js"></script>
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/js/main.js"></script>     
+    <script  type="text/javascript" src="../../../assets/plugins/jquery-1.11.2.min.js"></script>
+    <script  type="text/javascript" src="../../../assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+    <script  type="text/javascript" src="../../../assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+    <script  type="text/javascript" src="../../../assets/plugins/bootstrap-hover-dropdown.min.js"></script>       
+    <script  type="text/javascript" src="../../../assets/plugins/back-to-top.js"></script>             
+    <script  type="text/javascript" src="../../../assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>                                                                  
+    <script  type="text/javascript" src="../../../assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>     
+    <script  type="text/javascript" src="../../../assets/plugins/FitVids/jquery.fitvids.js"></script>
+    <script  type="text/javascript" src="../../../assets/js/main.js"></script>     
     
     <!-- Form Validation -->
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/jquery.validate.min.js"></script> 
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/js/form-validation-custom.js"></script> 
+    <script  type="text/javascript" src="../../../assets/plugins/jquery.validate.min.js"></script> 
+    <script  type="text/javascript" src="../../../assets/js/form-validation-custom.js"></script> 
     
     <!-- Form iOS fix -->
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/plugins/isMobile/isMobile.min.js"></script>
-    <script  type="text/javascript" src="http://ethereumpool.co/assets/js/form-mobile-fix.js"></script>     
+    <script  type="text/javascript" src="../../../assets/plugins/isMobile/isMobile.min.js"></script>
+    <script  type="text/javascript" src="../../../assets/js/form-mobile-fix.js"></script>     
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="http://ethereumpool.co/charts/js/highstock.js"></script>
-    <script src="http://ethereumpool.co/charts/js/modules/exporting.js"></script> 
+    <script src="/charts/js/highstock.js"></script>
+    <script src="/charts/js/modules/exporting.js"></script> 
     
             <script>
         $(".button-fill").hover(function () {
