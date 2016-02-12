@@ -1,6 +1,9 @@
 # Ethereumpool.co---Ethereum-Mining-Pool-Full-Source
 This is full source of Ethereum Mining Pool - http://ethereumpool.co Pool has been written in php and one script in python to perform proof of work validation. Pool software is efficient, it was using only 4% cpu while handling ~250 workers. It may be quite messy but i didn't spend much time on creating this, my intention was to fastly create pool to save community from only one existing pool with 50-70% network hashrate, but later other pools pop up. So now it's even more decentralized, everybody can easily set up own pool :)
 
+<b>Disclaimer</b><br>
+This is latest avaiable source code from original <b>ethereumpool.co</b> mining pool.<br>Domain has been sold to <b>eth.pp.ua</b>
+
 #Requirements
 Recommended <a href="https://github.com/facebook/hhvmHHVM" target="_blank">HHVM</a> over php5-fpm, but php5-fpm is fine.<br>
 <a href="https://mariadb.org" target="_blank">MariaDB server</a><br>
