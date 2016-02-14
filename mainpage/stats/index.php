@@ -156,7 +156,6 @@ echo '<!DOCTYPE html>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="EthPool.utocat.com is stable, transparent and fair mining pool with low fee and great support! Just switch your rig to us, and see it on yourself :)">
     <meta name="author" content="EthPool.utocat.com">
     <meta property="og:type"               content="website" />
     <meta property="og:title"              content="EthPool.utocat.com - Ethereum Mining Pool"/>
