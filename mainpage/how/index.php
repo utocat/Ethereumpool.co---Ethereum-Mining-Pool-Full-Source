@@ -94,14 +94,13 @@
                             <br/><br/>
                             step 2 : cd c:\ProgramData\chocolatey\lib\geth-stable\tools<br/>
 step 3 : geth --rpc <br/>(if u want to create ethereum account : type: geth account new)<br/>
-step 4 : https://github.com/ethereum/cpp-ethereum/wiki => telecharger “Windows 64-bit, stable”<br/>
+step 4 : https://github.com/ethereum/cpp-ethereum/wiki => download “Windows 64-bit, stable”<br/>
 Install Ethereum (++)<br/>
-go to  C:\Programmes\Ethereum\Release<br/>
-create file mine.bat (open text file, copy/past: ethminer.exe -G --opencl-device 0 -t 1, and save it)<br/>
-Execute mine.bat
                             </p>
                             <br/><br/>
                             <b><h2>Now how connect to pool?</h2><br></b>
+                            Open cmd<br/>
+                            go to  C:\Programmes\Ethereum\Release<br/>
                             ethminer -G -F http://ethpool.utocat.com/?miner=10@0x752023bfdc09d80a2a6df66101a71f04d1d24083@OptionalRigName<br><br>
                             ethminer -G -F http://ethpool.utocat.com/?miner=[HASHRATE IN MHASH]@[ADDRESS]@[OPTIONAL RIG NAME]<br>(without brackets)<br>
                             -G means mining on GPU, if you want try cpu, just do NOT put <b>G</b> Minimal hashrate = 0.01 MHash<br><br><br><br> 
