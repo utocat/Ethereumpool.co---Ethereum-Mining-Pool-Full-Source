@@ -88,16 +88,16 @@
                             </p>
                             <p>
                             <b><h2>If you are on windows, open cmd :</h2><br></b>
-                            Step 1 : Download Chocolatey
-                            @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin<br>
+                            Step 1 : Download Chocolatey<br/>
+                            @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin<br/>
                             choco install geth-stable -version 1.0.1.1
-                            
-                            step 2 : cd c:\ProgramData\chocolatey\lib\geth-stable\tools
-step 3 : geth --rpc, et ne fermez pas la commande
-step 4 : https://github.com/ethereum/cpp-ethereum/wiki => telecharger “Windows 64-bit, stable”
-Install Ethereum (++)
-go to  %Programmes%Ethereum%Release
-create file mine.bat (open text file, copy/past: ethminer.exe -G --opencl-device 0 -t 1, and save it)
+                            <br/><br/>
+                            step 2 : cd c:\ProgramData\chocolatey\lib\geth-stable\tools<br/>
+step 3 : geth --rpc <br/>(if u want to create ethereum account : type: geth account new)<br/>
+step 4 : https://github.com/ethereum/cpp-ethereum/wiki => telecharger “Windows 64-bit, stable”<br/>
+Install Ethereum (++)<br/>
+go to  C:\Programmes\Ethereum\Release<br/>
+create file mine.bat (open text file, copy/past: ethminer.exe -G --opencl-device 0 -t 1, and save it)<br/>
 Execute mine.bat
                             </p>
                             <br/><br/>
@@ -105,8 +105,8 @@ Execute mine.bat
                             ethminer -G -F http://ethpool.utocat.com/?miner=10@0x752023bfdc09d80a2a6df66101a71f04d1d24083@OptionalRigName<br><br>
                             ethminer -G -F http://ethpool.utocat.com/?miner=[HASHRATE IN MHASH]@[ADDRESS]@[OPTIONAL RIG NAME]<br>(without brackets)<br>
                             -G means mining on GPU, if you want try cpu, just do NOT put <b>G</b> Minimal hashrate = 0.01 MHash<br><br><br><br> 
-                            <b>Please set valid hashrate in mining url, if you set higher, you may not earn anything, if you set too low, pool will adjust diff to avoid share flood(but you may get more stale shares, so keep values real)<br>
-                            If you have multiple rigs connected here with the same declared hashrate, for example you have 2rigs x 60mhash, dont put 2x60@ please use 60@ and 61@ since this parm is not only hashrate but also unique id for each mining address!<br></b>
+                            <b>Please set valid hashrate in mining url, if you set higher, you may not earn anything, if you set too low, pool will adjust diff to avoid share flood(but you may get more stale shares, so keep values real)<br/>
+                            If you have multiple rigs connected here with the same declared hashrate, for example you have 2rigs x 60mhash, dont put 2x60@ please use 60@ and 61@ since this parm is not only hashrate but also unique id for each mining address!<br/></b>
                             You should get valid share average one per 2-3mins<br><br>
                             <b>How does pool calculate revenue for each miner?<br></b>
                             PPLNS/Time Prop - If time between last mined and previous mined block is longer than 8 minutes then pool will split proportionally between all miners which submitted valid shares depending on their diff. But if time between mined blocks is smaller than 8 minutes, then we will take previous shares from last 8 minutes and split according to diff and number of shares submitted<br><br>
