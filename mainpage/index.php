@@ -258,7 +258,6 @@ $current .= "\n\n\n\n---------------------------New Query\nMethod:".$method.' Fr
 $current .= "\nUser Hashrate S:".$hash_rate.'mhash';
 $current .= "\nUser payout S:".$payout_addr.'';
 
-m
 
 if ($method == 'eth_awaitNewWork' || $method == 'eth_progress') {
 	//Redirect other methods to RPC                                                    
