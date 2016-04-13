@@ -16,8 +16,7 @@ Recommended <a href="https://github.com/facebook/hhvmHHVM" target="_blank">HHVM<
 #Setup on Linux
 Install all software mentioned above.<br>
 Setup your mysql server and import database scheme <pre>misc>database_scheme.sql</pre>
-Now please review all source files and setup valid mysql connection details
-<pre>$mysqli=mysqli_connect('Mysql_server_ip','Database_username','Database_password','Database_name') or die("Database Error");</pre>
+Now please review all source files and set desired names etc. and setup valid mysql connection details in config.php.
 Copy all files to server<br>
 Setup nginx server blocks:
 <pre>'mainpage' directory as public and if you need block /logs directory

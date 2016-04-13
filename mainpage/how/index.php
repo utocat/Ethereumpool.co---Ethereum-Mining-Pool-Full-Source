@@ -76,23 +76,36 @@
             <form id="contact-form" class="contact-form form" method="post" action="push.php">                    
                 <div class="row text-left">
                     <div class="contact-form-inner col-md-8 col-sm-12 col-xs-12 col-md-offset-2 col-sm-offset-0 xs-offset-0">
-                        <div class="row">                                                                                       
-                            <b>If you are on linux just open terminal</b><br>
+                        <div class="row">        
+                            <p>                                                                               
+                            <b><h2>If you are on linux just open terminal</h2></b><br>
                             <br>sudo apt-get clean
                             <br>sudo add-apt-repository -y ppa:ethereum/ethereum-qt
                             <br>sudo add-apt-repository -y ppa:ethereum/ethereum
                             <br>sudo apt-get update
                             <br>sudo apt-get install cpp-ethereum<br><br>That's it, you have installed c++ version of ethereum and ethminer included<br>
                             You dont neet to set up account on local, you can mine directly to exchange<br><br>
-                            <b>If you are on windows, open cmd<br></b>
-                            bitsadmin /transfer cpp-ethereum "https://build.ethdev.com/builds/Windows%20C%2B%2B%20develop%20branch/Ethereum%20%28%2B%2B%29-win64-latest.exe" %temp%\eth++.exe & %temp%\eth++.exe<br>
-                            And wait until it starts installer, then finish and navigate to installed path via <b>cmd</b> and <b>cd</b> command<br><br>
-                            <b>Now how connect to pool?<br></b>
+                            </p>
+                            <p>
+                            <b><h2>If you are on windows, open cmd :</h2><br></b>
+                            Step 1 : Download Chocolatey<br/>
+                            @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin<br/>
+                            choco install geth-stable -version 1.0.1.1
+                            <br/><br/>
+                            step 2 : cd c:\ProgramData\chocolatey\lib\geth-stable\tools<br/>
+step 3 : geth --rpc <br/>(if u want to create ethereum account : type: geth account new)<br/>
+step 4 : https://github.com/ethereum/cpp-ethereum/wiki => download “Windows 64-bit, stable”<br/>
+Install Ethereum (++)<br/>
+                            </p>
+                            <br/><br/>
+                            <b><h2>Now how connect to pool?</h2><br></b>
+                            Open cmd<br/>
+                            go to  C:\Programmes\Ethereum\Release<br/>
                             ethminer -G -F http://ethpool.utocat.com/?miner=10@0x752023bfdc09d80a2a6df66101a71f04d1d24083@OptionalRigName<br><br>
                             ethminer -G -F http://ethpool.utocat.com/?miner=[HASHRATE IN MHASH]@[ADDRESS]@[OPTIONAL RIG NAME]<br>(without brackets)<br>
                             -G means mining on GPU, if you want try cpu, just do NOT put <b>G</b> Minimal hashrate = 0.01 MHash<br><br><br><br> 
-                            <b>Please set valid hashrate in mining url, if you set higher, you may not earn anything, if you set too low, pool will adjust diff to avoid share flood(but you may get more stale shares, so keep values real)<br>
-                            If you have multiple rigs connected here with the same declared hashrate, for example you have 2rigs x 60mhash, dont put 2x60@ please use 60@ and 61@ since this parm is not only hashrate but also unique id for each mining address!<br></b>
+                            <b>Please set valid hashrate in mining url, if you set higher, you may not earn anything, if you set too low, pool will adjust diff to avoid share flood(but you may get more stale shares, so keep values real)<br/>
+                            If you have multiple rigs connected here with the same declared hashrate, for example you have 2rigs x 60mhash, dont put 2x60@ please use 60@ and 61@ since this parm is not only hashrate but also unique id for each mining address!<br/></b>
                             You should get valid share average one per 2-3mins<br><br>
                             <b>How does pool calculate revenue for each miner?<br></b>
                             PPLNS/Time Prop - If time between last mined and previous mined block is longer than 8 minutes then pool will split proportionally between all miners which submitted valid shares depending on their diff. But if time between mined blocks is smaller than 8 minutes, then we will take previous shares from last 8 minutes and split according to diff and number of shares submitted<br><br>
@@ -102,7 +115,7 @@
                             Yes, we are verifying every miner step, we have implemented complex proof of work validation<br><br>
                             <b>How to get MHash value?<br></b>
                             Run ethminer -G -M and result of test divide by 1000000<br><br>
-                            <b>Need Help?<br></b>
+                            <b><h2>Need Help?</h2><br></b>
                             Contact us if you exprience any bug, or have any doubts or just cant<br>
                             set up your miner. Click supoort in right top corner!<br><br>
                             <b>What if i want to mine directly to my local account ?<br></b>
@@ -111,7 +124,7 @@
                             bash <(curl https://install-geth.ethereum.org -L)<br><br>
                             <b>Windows</b><br>
                             Install ->  <a href="https://chocolatey.org" target="_blank">https://chocolatey.org</a><br>and then<br>
-                            choco install geth-stable -version 1.0.1.2<br>
+                            choco install geth-stable<br>
                             <br><br>
                             Now go create account<br>
                             geth account new<br><br>

@@ -87,20 +87,18 @@ if (strpos($minerdata,'@') === false) {
     <!-- ******Contact Section****** --> 
     <section class="contact-section section">
         <div class="container">
-            <h2 class="title text-center"><br>EthPool.utocat.com - The most reliable mining pool yet!</h2>
+            <h2 class="title text-center"><br>EthPool.utocat.com - Ethereum Mining Pool</h2>
             <p class="intro text-left"></p>
              <p class="intro text-left"><font color="F22613"></p></font>
             <form id="contact-form" class="contact-form form" method="post" action="push.php">                    
-                <div class="row text-left">
+                <div class="row text-left">                                                                                    
                     <div class="contact-form-inner col-md-8 col-sm-12 col-xs-12 col-md-offset-2 col-sm-offset-0 xs-offset-0">
-                        <div class="row">                                                                                       
-							EthPool.utocat.com - is all about transparency and fair mining! Pool fee is 1% and network fee on withdraw<br>
-							Withdraw is twice a day if your balance exceed 1 ether.<br>
-							<br>
-							<center>
-                            <a class="twitter-timeline" href="https://twitter.com/ethpool_utocat" data-widget-id="680847830836199424">Tweets de @ethpool_utocat</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-</center>
+                        <div class="row"> 
+                        <span class="btn-danger">Attention: Beta version - Use at your own risk.</span><br/><br/>
+							EthPool.utocat.com - Pool fee is 0.5% and network fee on withdraw<br>
+							Withdraw is once a day if your balance exceed 1 ether.<br>
+							<br><center><a class="twitter-timeline" width="500" height="500" href="https://twitter.com/ethpool_utocat" data-widget-id="680847830836199424">Tweets by @ethpool_utocat</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?"http":"https";if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                            </center>
                             <br><br><b>In How to mine section you will find answers for questions:</b><br>
 							How connect to pool?<br>
                             How to set up ethereum client (wallet)?<br>
@@ -260,7 +258,6 @@ $current .= "\n\n\n\n---------------------------New Query\nMethod:".$method.' Fr
 //Get Last Block information  Memcached - > Run /process_work in screen
 $current .= "\nUser Hashrate S:".$hash_rate.'mhash';
 $current .= "\nUser payout S:".$payout_addr.'';
-
 
 
 if ($method == 'eth_awaitNewWork' || $method == 'eth_progress') {
