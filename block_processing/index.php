@@ -20,7 +20,7 @@ while(1) {
 	$existQuery = "SELECT balance FROM info WHERE id=1";
 	$existResult = mysqli_query($mysqli,$existQuery)or die("Database Error");
 	$existRow = mysqli_fetch_array($existResult);
-	$real_balance_prev = new Math_BigInteger($existRow[0]);  //CONVERT HEX LAST DIFF TO DECIMAL
+	$real_balance_prev = $existRow[0];  //CONVERT HEX LAST DIFF TO DECIMAL
 
 
 	////////////////////////////////////////LOGS////////////////////////////////////
@@ -84,15 +84,15 @@ if (!$result3) {
  	$result3 = curl_exec($ch1);
   	$block_info_last = json_decode($result3, true); 
   	$escapeDot = explode('.', sprintf('%f', hexdec($block_info_last['result'])));
-  	$balanceaddr = new Math_BigInteger($escapeDot[0]);
+  	$balanceaddr = $escapeDot[0];
   } else {
   	$block_info_last = json_decode($result3, true); 
-  	$balanceaddr = new Math_BigInteger($block_info_last['result']);
+  	$balanceaddr = $block_info_last['result'];
   }
   
-	$block_coins_size = new Math_BigInteger('0');
+	$block_coins_size = 0;
 	
-	$balanceToSave = new Math_BigInteger('0');
+	$balanceToSave = 0;
     
 	if (!$real_balance_prev == 0) {
 		$block_coins_size = $balanceaddr->subtract($real_balance_prev);
@@ -100,10 +100,10 @@ if (!$result3) {
 		$block_coins_size = $balanceaddr;
 	}
 	if ($block_coins_size < 0) {
-		$block_coins_size = new Math_BigInteger('0');
+		$block_coins_size = 0;
 	}
 	if (strpos($block_coins_size->toString(),'-') !== false) {
-		$block_coins_size = new Math_BigInteger('0');
+		$block_coins_size = 0;
 	}
 	if (!$block_coins_size) {
 		die('Invalid block coins size');
@@ -113,9 +113,9 @@ if (!$result3) {
 	}
 
 
-	$uncle = new Math_BigInteger('0');
-	$maxUncle = new Math_BigInteger('4800000000000000000');
-	$standart_block_size = new Math_BigInteger('5000010000000000000');
+	$uncle = 0;
+	$maxUncle = 4800000000000000000;
+	$standart_block_size = 5000010000000000000;
 	$uncle = $standart_block_size->add($maxUncle);
 	echo "\nbalance:".$balanceaddr->toString();
 	$current .= "\nbalance:".$balanceaddr->toString();
@@ -129,7 +129,7 @@ if (!$result3) {
 			echo "\nBacklog(uncle) detected using standart -> 5000000000000000000";
 			$current .= "\nBacklog(uncle) detected using standart -> 5000000000000000000";
 		} else {
-			$block_coins_size = new Math_BigInteger('5000010000000000000');
+			$block_coins_size = 5000010000000000000;
 			$balanceToSave = $balanceaddr->subtract($block_coins_size);
 			echo "\nBacklog detected using standart -> 5000010000000000000";
 			$current .= "\nBacklog detected using standart -> 5000010000000000000";
@@ -139,7 +139,7 @@ if (!$result3) {
 		echo "\nBlocksize normal PLAIN";
 		$current .= "\nBlocksize normal PLAIN";
 	}							  
-	$too_bigg = new Math_BigInteger('12000000000000000000');
+	$too_bigg = 12000000000000000000;
 	if ($block_coins_size > $too_bigg) {
 		$block_coins_size = $standart_block_size;
 		echo "\nBlocksize normal _FIXXX";
@@ -164,14 +164,14 @@ if (!$result3) {
 		echo "\nBlocksize normal _FIXXX _LENGHT ".$block_coins_size->toString();
 		$current .= "\nBlocksize normal _FIXXX _LENGHT ".$block_coins_size->toString();
 	}
-	$nullNumber = new Math_BigInteger('0');
+	$nullNumber = 0;
 	if ($block_coins_size < $nullNumber) {
 		$block_coins_size = $nullNumber;
 	}
 	$ether_wei = 1000000000000000000;
 
 	$pool_fee_revenue = '0x50e00de2c5cc4e456cf234fcb1a0efa367ed016e';  //Pool fee revenue
-	$poolFee = 100-1;  // fee -> 1%
+	$poolFee = 100-0.5;  // fee -> 0.5%
 	$current .= "\nBlock size:".$block_coins_size->toString().'';
 	$current .= "\nPool fee:".$poolFee.'';
 
@@ -286,17 +286,17 @@ if (!$result3) {
 				$current .= "\nShares:".$count_response;
 
 				$timestamps = array();
-				$totalMinersDiff = new Math_BigInteger('0');
+				$totalMinersDiff = 0;
 				$miner_payouts = array();
 				while ($row=mysqli_fetch_row($existResultMinersss)){
 					$miner_adr = $row[0];
-					$miner_adr_balance = new Math_BigInteger($row[1]);
+					$miner_adr_balance = $row[1];
 					$totalMinersDiff = $totalMinersDiff->add($miner_adr_balance);
 
 					if (!isset($miner_payouts["'$miner_adr'"])) {
     					$miner_payouts["'$miner_adr'"] = $miner_adr_balance;
     				} else {
-    					$miner_adr_balance_fromArray = new Math_BigInteger($miner_payouts["'$miner_adr'"]);
+    					$miner_adr_balance_fromArray = $miner_payouts["'$miner_adr'"];
 						$setNewValue = $miner_adr_balance_fromArray->add($miner_adr_balance);
 						$miner_payouts["'$miner_adr'"] = $setNewValue->toString();
     				}
@@ -318,14 +318,14 @@ if (!$result3) {
 
 					while ($row=mysqli_fetch_row($existResultMinersss)){
 						$miner_adr = $row[0];
-						$miner_adr_balance = new Math_BigInteger($row[1]);
+						$miner_adr_balance = $row[1];
 						$totalMinersDiff = $totalMinersDiff->add($miner_adr_balance);
 
 						if (!isset($miner_payouts["'$miner_adr'"])) {
     						$miner_payouts["'$miner_adr'"] = $miner_adr_balance;
     						$old_new_added++;
     					} else {
-    						$miner_adr_balance_fromArray = new Math_BigInteger($miner_payouts["'$miner_adr'"]);
+    						$miner_adr_balance_fromArray = $miner_payouts["'$miner_adr'"];
 							$setNewValue = $miner_adr_balance_fromArray->add($miner_adr_balance);
 							$miner_payouts["'$miner_adr'"] = $setNewValue->toString();
 							$old_old_old++;
@@ -343,24 +343,24 @@ if (!$result3) {
 				$current .= "\n=============================================================================";
 				$current .= "\nTotal Miners Diff:".$totalMinersDiff->toString().'  =  '.$block_coins_size->toString().' wei';
 
-				$totalsplit = new Math_BigInteger(0);
-				$totalEther = new Math_BigInteger(0);
-				$ether = new Math_BigInteger(0);
-				$etherWithFeeTemp = new Math_BigInteger(0);
-				$etherWithFee = new Math_BigInteger(0);
-				$totalEtherWithFee = new Math_BigInteger(0);
-				$subtractvalue = new Math_BigInteger(0);
-				$poolRevenue = new Math_BigInteger(0);
-				$tempdivider = new Math_BigInteger(100);
+				$totalsplit = 0;
+				$totalEther = 0;
+				$ether = 0;
+				$etherWithFeeTemp = 0;
+				$etherWithFee = 0;
+				$totalEtherWithFee = 0;
+				$subtractvalue = 0;
+				$poolRevenue = 0;
+				$tempdivider = 100;
 
 				foreach ($miner_payouts as $key => $value) {
-					$valueadd = new Math_BigInteger($value);
+					$valueadd = $value;
 					$totalsplit = $totalsplit->add($valueadd);
 					$ether = $valueadd->multiply($block_coins_size);
 					list($quotient23, $remainder) = $ether->divide($totalMinersDiff);
 					$ether = $quotient23;
 					$totalEther = $totalEther->add($ether);
-					$fee_pool_pool = new Math_BigInteger($poolFee);
+					$fee_pool_pool = $poolFee;
 					$etherWithFeeTemp = $ether->multiply($fee_pool_pool);
 					list($quotientFEE, $remainder) = $etherWithFeeTemp->divide($tempdivider);
 					$etherWithFee = $quotientFEE;
@@ -377,7 +377,7 @@ if (!$result3) {
 					$existResult = mysqli_query($mysqli,$existQuery)or die("Database Error");
 					$existRow = mysqli_fetch_array($existResult);
 
-					$real_balance = new Math_BigInteger($existRow[0]);
+					$real_balance = $existRow[0];
 					$etherWithFee = $etherWithFee->add($real_balance);
 					$formatedRevenueForMiner = $etherWithFee->toString();
 
@@ -422,7 +422,7 @@ if (!$result3) {
 				$existQuery = "SELECT balance FROM miners WHERE address='$pool_fee_revenue'";
 				$existResult = mysqli_query($mysqli,$existQuery)or die("Database Error");
 				$existRow = mysqli_fetch_array($existResult);
-				$real_balance = new Math_BigInteger($existRow[0]);
+				$real_balance = $existRow[0];
 				$poolRevenue = $poolRevenue->add($real_balance);
 				$formatedPoolRevenue = $poolRevenue->toString();
 
@@ -439,10 +439,10 @@ if (!$result3) {
 
 				$existQuery = "SELECT address,balance FROM miners WHERE balance!='0'";
 				$existResult = mysqli_query($mysqli,$existQuery)or die("Database Error");
-				$total = new Math_BigInteger(0);
+				$total = 0;
 				while ($row=mysqli_fetch_row($existResult)){
 					$payer_adr = $row[0];
-					$balanceforthisaddr = new Math_BigInteger($row[1]);
+					$balanceforthisaddr = $row[1];
 					$total = $total->add($balanceforthisaddr);
 				}
 				$updatebalanceaddr = $total->toString();
