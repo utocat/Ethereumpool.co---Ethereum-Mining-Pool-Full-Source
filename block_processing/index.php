@@ -102,7 +102,7 @@ if (!$result3) {
 	if ($block_coins_size < 0) {
 		$block_coins_size = 0;
 	}
-	if ($block_coins_size < 0) {
+	if (strpos($block_coins_size->toString(),'-') !== false) {
 		$block_coins_size = 0;
 	}
 	if (!$block_coins_size) {
